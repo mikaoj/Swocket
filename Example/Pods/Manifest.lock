@@ -1,0 +1,14 @@
+PODS:
+  - Swocket (0.1.0)
+
+DEPENDENCIES:
+  - Swocket (from `../`)
+
+EXTERNAL SOURCES:
+  Swocket:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Swocket: 05e23505e1c87aa364210fb528690be932c0a1a5
+
+COCOAPODS: 0.37.2

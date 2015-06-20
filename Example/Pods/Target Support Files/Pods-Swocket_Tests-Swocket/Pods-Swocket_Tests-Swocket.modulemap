@@ -1,0 +1,6 @@
+framework module Swocket {
+  umbrella header "Pods-Swocket_Tests-Swocket-umbrella.h"
+
+  export *
+  module * { export * }
+}

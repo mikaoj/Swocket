@@ -7,18 +7,18 @@
 //
 
 import UIKit
+import Swocket
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    // Set up a socket to localhost on port 9999
+    let client = Swocket(port: 9999, host: "127.0.0.1")
+    
+    @IBAction func send(sender: UIButton) {
+        // Send data
+        try! client.send { (socket) -> (NSData?) in
+            return "Eat shit!".dataUsingEncoding(NSUTF8StringEncoding)
+        }
+        client.close() // TODO: Shouldn't be needed
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
