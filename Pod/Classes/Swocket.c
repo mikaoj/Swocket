@@ -52,20 +52,9 @@ int swocket_connect(const char * port, const char * host) {
     printf("Connected to %s with socket descriptor: %d\n", s, sockfd);
     freeaddrinfo(servinfo); // all done with this structure
     
-    return sockfd;
-}
-
-void swocket_close(int sockfd) {
-    printf("Closing socket descriptor: %d\n", sockfd);
-    close(sockfd);
-}
-
-ssize_t swocket_send(int sockfd, const void *buffer, ssize_t length) {
-    printf("Sending to: %d\n", sockfd);
-    ssize_t result = send(sockfd, buffer, length, 0);
-    if (result == -1) {
-        printf("Oh dear, something went wrong with read()! %s\n", strerror(errno));
-    }
+    // Set socket to ignore SIGPIPE
+    int yes = 1;
+    setsockopt(sockfd, SOL_SOCKET, SO_NOSIGPIPE, &yes,sizeof(yes));
     
-    return result;
+    return sockfd;
 }

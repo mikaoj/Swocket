@@ -22,16 +22,34 @@
 
 import Foundation
 
-enum SwocketError: ErrorType {
+public enum SwocketError: ErrorType {
     case Connection
     case Send
     case Recieve
 }
 
+public typealias SwocketAsyncError = (error: SwocketError) -> ()
+
 public class Swocket { // TODO: Struct?
     private var sockfd: Int32?
-    private let port: UInt
-    private let host: String
+    private let port: [CChar]
+    private let host: [CChar]
+    private let dispatchQueue: dispatch_queue_t
+    private let callbackQueue: dispatch_queue_t
+    
+    // MARK: Public functions
+    public init(port: UInt, host: String, callback: dispatch_queue_t = dispatch_get_main_queue()) {
+        // Forcefull unwrapp on purpose
+        self.port = String(port).cStringUsingEncoding(NSUTF8StringEncoding)!
+        self.host = host.cStringUsingEncoding(NSUTF8StringEncoding)!
+        self.callbackQueue = callback
+        dispatchQueue = dispatch_queue_create("\(host):\(port)", nil)
+    }
+    
+    deinit {
+        // Make sure we close connection on deallocation
+        disconnect()
+    }
     
     /**
     Listen for incomming connections on a given port.
@@ -39,7 +57,7 @@ public class Swocket { // TODO: Struct?
     - Parameter onConnection: A closure to handle incoming connections from.
     - Returns: The server socket.
     */
-    public class func listen(port: UInt, onConnection: (server: Swocket, client: Swocket) -> ()) throws -> Swocket {
+    public class func listen(port: UInt, onConnection: (server: Swocket, client: Swocket) -> (), error: SwocketAsyncError? = nil) -> Swocket {
         
         return Swocket(port: port, host: "")
     }
@@ -49,17 +67,35 @@ public class Swocket { // TODO: Struct?
     - Parameter send: A closure that gets called when socket is ready to send. Should return the NSData to send.
     - Returns: This socket so you can chain operations
     */
-    public final func send(send: (socket: Swocket) -> (NSData?)) throws -> Swocket {
-        if sockfd == nil {
-            try connect()
+    public final func send(data: NSData, error: SwocketAsyncError? = nil) -> Swocket {
+        dispatch_async(dispatchQueue) { () -> Void in
+            if let sockfd = self.sockfd {
+                
+                var totalSent = 0
+                var bytesLeft = data.length
+                var sentChunkSize = 0
+                
+                // Repeat until all bytes are sent, or we get an error
+                repeat {
+                    sentChunkSize = Foundation.send(sockfd, data.bytes+totalSent, bytesLeft, 0)
+                    if sentChunkSize == -1 {
+                        if let error = error {
+                            error(error: SwocketError.Send)
+                        }
+                        break
+                    }
+                    
+                    totalSent += sentChunkSize
+                    bytesLeft -= sentChunkSize
+                } while totalSent < data.length
+            } else {
+                if let error = error {
+                    error(error: SwocketError.Send)
+                }
+            }
         }
         
-        // TODO: Dispatch!
-        if let sockfd = sockfd, let data = send(socket: self) where swocket_send(sockfd, data.bytes, data.length) != -1 {
-            return self
-        } else {
-            throw SwocketError.Send
-        }
+        return self
     }
     
     /**
@@ -67,44 +103,54 @@ public class Swocket { // TODO: Struct?
     - Parameter recieve: Closure that get called with the recieving data.
     - Returns: This socket, so you can chain operations
     */
-    public final func recieve(recieve: (socket: Swocket, data: NSData) -> ()) throws -> Swocket {
+    public final func recieve(recieve: (socket: Swocket, data: NSData) -> (), error: SwocketAsyncError? = nil) -> Swocket {
+        
+        dispatch_async(dispatchQueue) { () -> Void in
+            if let sockfd = self.sockfd {
+                let maxSize = 100
+                var nullChar: Int8 = 0
+                let data = NSMutableData(bytes: &nullChar, length: maxSize)
+                let dataPtr = UnsafeMutablePointer<Void>(data.mutableBytes)
+                
+                let numBytes = recv(sockfd, dataPtr, maxSize-1, 0)
+                
+                dispatch_async(self.callbackQueue, { () -> Void in
+                    recieve(socket: self, data: NSData(bytes: data.bytes, length: numBytes))
+                })
+            } else {
+                // ERROR!
+            }
+        }
+        
         return self
     }
     
     /**
     Close connection.
     */
-    public final func close() {
-        if let sockfd = sockfd {
-            // Close socket
-            swocket_close(sockfd)
-            self.sockfd = nil
+    public final func disconnect() {
+        dispatch_async(dispatchQueue) { () -> Void in
+            if let sockfd = self.sockfd {
+                // Close socket
+                close(sockfd)
+                self.sockfd = nil
+            }
         }
     }
     
-    public init(port: UInt, host: String) {
-        self.port = port
-        self.host = host
-    }
-    
-    deinit {
-        // Make sure we close connection on deallocation
-        close()
-    }
-    
-    private final func connect() throws {
-        // Convert host and port to c strings
-        guard let host = host.cStringUsingEncoding(NSUTF8StringEncoding), let port = String(port).cStringUsingEncoding(NSUTF8StringEncoding) else {
-            throw SwocketError.Connection
+    // MARK: Private functions
+    /**
+    */
+    public final func connect(error: SwocketAsyncError? = nil) {
+        dispatch_async(dispatchQueue) { () -> Void in
+            // Try to connect, -1 indicates failure
+            let newFd = swocket_connect(self.port, self.host)
+            if let error = error where newFd == -1 {
+                error(error: SwocketError.Connection)
+            }
+            
+            // Assign socket descriptor
+            self.sockfd = newFd
         }
-        
-        // Try to connect, -1 indicates failure
-        let newFd = swocket_connect(port, host)
-        if newFd == -1 {
-            throw SwocketError.Connection
-        }
-        
-        // Assign socket descriptor
-        sockfd = newFd
     }
 }

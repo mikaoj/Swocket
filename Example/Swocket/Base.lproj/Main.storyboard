@@ -17,20 +17,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gS7-sL-SaL">
-                                <rect key="frame" x="282" y="285" width="36" height="30"/>
-                                <state key="normal" title="Send"/>
-                                <connections>
-                                    <action selector="send:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PMM-Nc-knV"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4gq-Zj-UB4">
+                                <rect key="frame" x="234.5" y="260" width="131.5" height="80.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Response" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdf-Jd-OLl">
+                                        <rect key="frame" x="28" y="0.0" width="75.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message to send" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mR7-VE-oYj">
+                                        <rect key="frame" x="0.0" y="20.5" width="131.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9V-47-J4Q">
+                                        <rect key="frame" x="48" y="50.5" width="36" height="30"/>
+                                        <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="send:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QS1-aA-5og"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gS7-sL-SaL" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="6YA-cq-4fu"/>
-                            <constraint firstItem="gS7-sL-SaL" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="XMm-9e-9qw"/>
+                            <constraint firstItem="4gq-Zj-UB4" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Vsp-P2-dPK"/>
+                            <constraint firstItem="4gq-Zj-UB4" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ei7-KF-cbv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageField" destination="mR7-VE-oYj" id="bYh-1I-D5Y"/>
+                        <outlet property="responseLabel" destination="Jdf-Jd-OLl" id="PUN-DG-O1l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
