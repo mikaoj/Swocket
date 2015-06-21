@@ -78,6 +78,7 @@ public class Swocket { // TODO: Struct?
                     let client = Swocket(host: "", port: port)
                     client.sockfd = clientFd
                     onConnection(client: client)
+                    client.disconnect()
                 })
             }
             

@@ -42,9 +42,8 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         let data = "Wazzzup\n".dataUsingEncoding(NSUTF8StringEncoding)!
         
-        Swocket.listen(3737, onConnection: { (client) -> () in
+        Swocket.listen(1337, onConnection: { (client) -> () in
             client.send(data)
-            client.disconnect()
         })
     }
 }

@@ -1,4 +1,4 @@
-# Swocket
+![Logo](Swocket.png)
 
 [![CI Status](http://img.shields.io/travis/Joakim Gyllstrom/Swocket.svg?style=flat)](https://travis-ci.org/Joakim Gyllstrom/Swocket)
 [![Version](https://img.shields.io/cocoapods/v/Swocket.svg?style=flat)](http://cocoapods.org/pods/Swocket)
@@ -9,7 +9,22 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+##### Client:
+```swift
+
+```
+##### Server:
+```swift
+let data = "Hello world!\n".dataUsingEncoding(NSUTF8StringEncoding)!
+
+Swocket.listen(1337, onConnection: { (client) -> () in
+    client.send(data)
+})
+```
+
 ## Requirements
+
+Xcode 7
 
 ## Installation
 
@@ -22,7 +37,7 @@ pod "Swocket"
 
 ## Author
 
-Joakim Gyllstrom, joakim@backslashed.se
+Joakim Gyllström, joakim@backslashed.se
 
 ## License
 
