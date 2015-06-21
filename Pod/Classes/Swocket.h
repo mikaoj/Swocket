@@ -22,9 +22,8 @@
 #include <sys/wait.h>
 #include <signal.h>
 
-void sigchld_handler(int s);
-void *get_in_addr(struct sockaddr *sa);
-
 int swocket_connect(const char * port, const char * host);
+int swocket_listen(const char * port, int backlog);
+int swocket_accept(int sockfd);
 
 #endif /* Swocket_h */
