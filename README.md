@@ -49,6 +49,16 @@ Swocket.listen(1337, onConnection: { (client) -> () in
 })
 ```
 
+##### Handle errors:
+```swift
+// All functions have an optional error closure
+Swocket.listen(1337, onConnection: { (client) -> () in
+    client.send(data)
+}) { (error) -> () in
+    print(error)
+}
+```
+
 ## Requirements
 
 Xcode 7
