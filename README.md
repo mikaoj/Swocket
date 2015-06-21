@@ -8,11 +8,12 @@
 This is not ready for production yet. But I'm hoping to have it ready for the world in a couple of weeks.
 
 ## TODO
-UDP
-Tests
-Inline C helper methods
-Benchmark
-Cleanup
+* UDP
+* Tests
+* Inline C helper methods
+* Benchmark
+* Cleanup
+* Cocoapods
 
 ## Usage
 
