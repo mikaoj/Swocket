@@ -1,6 +1,6 @@
 ![Logo](Swocket.png)
 
-[![CI Status](http://img.shields.io/travis/Joakim Gyllstrom/Swocket.svg?style=flat)](https://travis-ci.org/Joakim Gyllstrom/Swocket)
+[![CI Status](http://img.shields.io/travis/mikoaj/Swocket.svg?style=flat)](https://travis-ci.org/mikaoj/Swocket)
 [![Version](https://img.shields.io/cocoapods/v/Swocket.svg?style=flat)](http://cocoapods.org/pods/Swocket)
 [![License](https://img.shields.io/cocoapods/l/Swocket.svg?style=flat)](http://cocoapods.org/pods/Swocket)
 [![Platform](https://img.shields.io/cocoapods/p/Swocket.svg?style=flat)](http://cocoapods.org/pods/Swocket)
