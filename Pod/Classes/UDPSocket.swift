@@ -22,6 +22,5 @@
 
 import Foundation
 
-public class Swocket {
-    public static let TCP = TCPSocket.self
+public class UDPSocket {
 }

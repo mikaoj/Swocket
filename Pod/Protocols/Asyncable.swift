@@ -22,6 +22,17 @@
 
 import Foundation
 
-public class Swocket {
-    public static let TCP = TCPSocket.self
+public typealias SwocketErrorClosure = (SwocketError) -> Void
+public typealias SwocketDataClosure = (NSData?, SwocketError?) -> Void
+
+public protocol Asyncable {
+    /**
+    Queue to perform work on
+    */
+    var dispatchQueue: dispatch_queue_t { get }
+    
+    /**
+    Queue to do callbacks on (errors, response, etc)
+    */
+    var callbackQueue: dispatch_queue_t { get }
 }

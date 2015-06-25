@@ -22,6 +22,31 @@
 
 import Foundation
 
-public class Swocket {
-    public static let TCP = TCPSocket.self
+public enum SwocketError: ErrorType {
+    case AlreadyConnected
+    case FailedToConnect
+    case NotConnected
+    case FailedToSend
+    case ConnectionClosed
+    case FailedToListen
+    case FailedToRecieve
+}
+
+/**
+Common socket implementation that can be shared between TCP and UDP
+*/
+internal final class Socket : Asyncable {
+    let port: [CChar]
+    let host: [CChar]
+    let callbackQueue: dispatch_queue_t
+    let dispatchQueue: dispatch_queue_t
+    
+    init(host aHost: String, port aPort: UInt, callback: dispatch_queue_t, dispatch: dispatch_queue_t) {
+        // Forcefull unwrapp on purpose
+        port = String(aPort).cStringUsingEncoding(NSUTF8StringEncoding)!
+        host = aHost.cStringUsingEncoding(NSUTF8StringEncoding)!
+        
+        callbackQueue = callback
+        dispatchQueue = dispatch
+    }
 }

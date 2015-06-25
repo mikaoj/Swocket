@@ -20,8 +20,37 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import Foundation
-
-public class Swocket {
-    public static let TCP = TCPSocket.self
+extension Asyncable {
+    /**
+    Convenience method for dispatching closure on dispatchQueue
+    */
+    public func async(closure: () -> Void) {
+        dispatch_async(dispatchQueue, closure)
+    }
+    
+    /**
+    Convenience method for handling errors
+    */
+    public func handleError(error: SwocketError, withClosure closure: SwocketErrorClosure?) {
+        guard let closure = closure else {
+            return
+        }
+        
+        dispatch_async(callbackQueue) { () -> Void in
+            closure(error)
+        }
+    }
+    
+    /**
+    Convenience method for handling errors
+    */
+    public func handleError(error: SwocketError, withClosure closure: SwocketDataClosure?) {
+        guard let closure = closure else {
+            return
+        }
+        
+        dispatch_async(callbackQueue) { () -> Void in
+            closure(nil, error)
+        }
+    }
 }

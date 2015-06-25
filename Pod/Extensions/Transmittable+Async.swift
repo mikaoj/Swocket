@@ -22,6 +22,34 @@
 
 import Foundation
 
-public class Swocket {
-    public static let TCP = TCPSocket.self
+extension Transmittable where Self : Asyncable {
+    public func sendDataAsync(data: NSData, onError errorClosure: SwocketErrorClosure? = nil) {
+        async { () -> Void in
+            do {
+                try self.sendData(data)
+            } catch {
+                if let error = error as? SwocketError {
+                    self.handleError(error, withClosure: errorClosure)
+                }
+            }
+        }
+    }
+    
+    public func recieveDataAsync(completion: SwocketDataClosure? = nil) {
+        async { () -> Void in
+            do {
+                let data = try self.recieveData()
+                
+                if let completion = completion {
+                    dispatch_async(self.callbackQueue, { () -> Void in
+                        completion(data, nil)
+                    })
+                }
+            } catch {
+                if let error = error as? SwocketError {
+                    self.handleError(error, withClosure: completion)
+                }
+            }
+        }
+    }
 }

@@ -22,6 +22,28 @@
 
 import Foundation
 
-public class Swocket {
-    public static let TCP = TCPSocket.self
+extension Connectable where Self : Asyncable {
+    public func connectAsync(onError errorClosure: SwocketErrorClosure? = nil) {
+        async { () -> Void in
+            do {
+                try self.connect()
+            } catch {
+                if let error = error as? SwocketError {
+                    self.handleError(error, withClosure: errorClosure)
+                }
+            }
+        }
+    }
+    
+    public func disconnectAsync(onError errorClosure: SwocketErrorClosure? = nil) {
+        async { () -> Void in
+            do {
+                try self.disconnect()
+            } catch {
+                if let error = error as? SwocketError {
+                    self.handleError(error, withClosure: errorClosure)
+                }
+            }
+        }
+    }
 }

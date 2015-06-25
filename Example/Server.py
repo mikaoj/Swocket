@@ -15,6 +15,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
         print "{} wrote:".format(self.client_address[0])
         print self.data
         # just send back the same data, but upper-cased
+        print "sending response: {}".format(self.data.upper())
         self.request.sendall(self.data.upper())
 
 if __name__ == "__main__":
