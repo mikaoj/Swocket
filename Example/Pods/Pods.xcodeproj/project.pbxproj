@@ -7,391 +7,391 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03E6CB7DA22E133FA0E9FDC1 /* Transmittable+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5998DABEBB6F7D44AD73F8 /* Transmittable+Async.swift */; };
-		04EB7E78133F2B77EDA9B6C7 /* Asyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0931046B0C50A5A539BD4 /* Asyncable.swift */; };
-		1271B07F3186219A9455ADAA /* Transmittable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174006F1E562D0272646820B /* Transmittable.swift */; };
-		1E2D4D53F845FAAD90690AA2 /* Transmittable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174006F1E562D0272646820B /* Transmittable.swift */; };
-		20E5A3B459DF0048E9F392C6 /* Swocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 019F337CBADC18BCA4B7733E /* Swocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24EBD9D0386878972D4D7723 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4003233C609466E892A6940F /* Foundation.framework */; };
-		26F02E150773323117205EB0 /* Connectable+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E54B166E582F84AA6AF1A65 /* Connectable+Async.swift */; };
-		47D15253D524840007291C67 /* Swocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0441B5F91D0373818054373 /* Swocket.swift */; };
-		5C409B5A853141E253396CAD /* Connectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB896B5A5DC65439D352141C /* Connectable.swift */; };
-		5D8EDE92CF74205AC15BC6E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4003233C609466E892A6940F /* Foundation.framework */; };
-		5DF22F2C1B328341307C44B8 /* Pods-Swocket_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C1EE173BADC3F50FF65E38F /* Pods-Swocket_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61AD046F4CBAC28EDAD850A4 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38A536E807EC37DB80C138 /* Socket.swift */; };
-		6888326B6C40AC9D9F431997 /* Pods-Swocket_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5EC840147F0D1A90F88E7B4 /* Pods-Swocket_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6ACA8E2268B0942B2CC7C7FF /* Swocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE130C02D3B9B3C4EBEBF4 /* Swocket.c */; };
-		7568050D3A1B4B6E2E4CBDA2 /* Pods-Swocket_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E51EADBF6166444F58A12366 /* Pods-Swocket_Example-dummy.m */; };
-		7FD395E078ED89E14B1839B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4003233C609466E892A6940F /* Foundation.framework */; };
-		857BAC2005EF41B5B48ABBB2 /* Connectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB896B5A5DC65439D352141C /* Connectable.swift */; };
-		86A62FEF9282AA7FE32C9D4F /* Asyncable+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8F37511885804FCFABB22 /* Asyncable+Helpers.swift */; };
-		8C5D026E8598B2F44BC6F41A /* Swocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE130C02D3B9B3C4EBEBF4 /* Swocket.c */; };
-		8E48AB75B6302BD1CE3DF869 /* Asyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0931046B0C50A5A539BD4 /* Asyncable.swift */; };
-		92B3B6BC9948A4F008222056 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C38A536E807EC37DB80C138 /* Socket.swift */; };
-		9D410AA6909E93BA4877FD72 /* Listenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C26B6EE24982925BD90E4 /* Listenable.swift */; };
-		A47B44A35BF2F04CEEC432ED /* TCPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0622C73AC04D223FB4E39 /* TCPSocket.swift */; };
-		AA7FE39471F4CAB6C6B48443 /* Listenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C26B6EE24982925BD90E4 /* Listenable.swift */; };
-		AEC6F2A551802FD455BC0C71 /* Asyncable+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8F37511885804FCFABB22 /* Asyncable+Helpers.swift */; };
-		B086611826919B395DAE7683 /* UDPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88897CB89152A44E0A34FD /* UDPSocket.swift */; };
-		BAF787FA04DE4D5221BD0AB8 /* Swocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 019F337CBADC18BCA4B7733E /* Swocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0156A76709B80A30BCCE691 /* TCPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0622C73AC04D223FB4E39 /* TCPSocket.swift */; };
-		C79FA6FE7841C8A024268EF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4003233C609466E892A6940F /* Foundation.framework */; };
-		C83BAD9D88BDA917159E7C8E /* Pods-Swocket_Example-Swocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DB8486E1411F97FB9309E0C /* Pods-Swocket_Example-Swocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFB03715E64368D21D52C9E8 /* Pods-Swocket_Example-Swocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64ADF70629810418EEE61EFB /* Pods-Swocket_Example-Swocket-dummy.m */; };
-		E04058E39BB63DCC53B7D07A /* Connectable+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E54B166E582F84AA6AF1A65 /* Connectable+Async.swift */; };
-		E1F0067128AF625574204C54 /* Pods-Swocket_Tests-Swocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4FBD25F6264C2B28181322 /* Pods-Swocket_Tests-Swocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E782A9B6BE664C8D0CCF2FBF /* Pods-Swocket_Tests-Swocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B53419AC57D0AC5327D4C418 /* Pods-Swocket_Tests-Swocket-dummy.m */; };
-		ECC57E3A69B6522B3F2B03DD /* UDPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88897CB89152A44E0A34FD /* UDPSocket.swift */; };
-		EE482D013206A2F323A393B6 /* Swocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0441B5F91D0373818054373 /* Swocket.swift */; };
-		FE75E4C7D3BC795852242F81 /* Transmittable+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5998DABEBB6F7D44AD73F8 /* Transmittable+Async.swift */; };
-		FF8A2C783B75BB4A6A16C6EC /* Pods-Swocket_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 048DEFBDA886DFFA8FC747B7 /* Pods-Swocket_Tests-dummy.m */; };
+		065DF1DD4E9DC2453E681577 /* Asyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E07EAB9C89F0344B4AD4F /* Asyncable.swift */; };
+		0D2EB3E60E0BED75C787E847 /* Connectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB785A907AE5F7E4E1C10C0 /* Connectable.swift */; };
+		0DA0A703CF5BA4174096BF7E /* Swocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FEBDDE0487B9DA9CDBD1748 /* Swocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F8214BC29B61738F4AAB5B4 /* TCPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71658415259E3512D6DC0E05 /* TCPSocket.swift */; };
+		16F22C1400A89E32934C81C6 /* Pods-Swocket_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 954BD50B97804E8EF09E757A /* Pods-Swocket_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23AF8F70E1C03736C7FF6DE3 /* Connectable+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390C177E0D25328D9DBA643 /* Connectable+Async.swift */; };
+		400809E962E91E92E8DC8C2B /* TCPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71658415259E3512D6DC0E05 /* TCPSocket.swift */; };
+		42CB648E7EEF1C72DFA6C63F /* Listenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DBDC9193577E3B8CC625C /* Listenable.swift */; };
+		430FD608A3FF0BA7636987EA /* Asyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E07EAB9C89F0344B4AD4F /* Asyncable.swift */; };
+		482D64F0E14E69801ABBCC20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4564CFCE33254AE2EC4431 /* Foundation.framework */; };
+		487EA4704DCDFC4CEF4D0D12 /* Pods-Swocket_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD9C4A4AFAE7B0BF6D23089 /* Pods-Swocket_Example-dummy.m */; };
+		4F53C63B768E3D7A1EC5071C /* UDPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CC27DA47A2C08A4B542462 /* UDPSocket.swift */; };
+		537A9DF0AA8075A0EC427ED8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4564CFCE33254AE2EC4431 /* Foundation.framework */; };
+		54C01FC18A69F83144826557 /* Connectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB785A907AE5F7E4E1C10C0 /* Connectable.swift */; };
+		5900B0E96FC067D2D7413535 /* Swocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53851D613D198A090ACD2E05 /* Swocket.swift */; };
+		6136E8A7BD4A5CBD5AC4E617 /* Swocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA32F377B32FB46997EEBD /* Swocket.c */; };
+		68FE0039498269A28DCED659 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4564CFCE33254AE2EC4431 /* Foundation.framework */; };
+		7205BF2A419E0F4E18353FD8 /* Swocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA32F377B32FB46997EEBD /* Swocket.c */; };
+		74B049225C33F9C56602FA0B /* Asyncable+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C174169BA669A7B05A1AD /* Asyncable+Helpers.swift */; };
+		76B54945F55795586EFF0830 /* Transmittable+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7B560CB17907282DAFAC8D /* Transmittable+Async.swift */; };
+		7E0E17710A1A06CAA4D9A952 /* Transmittable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883843ED270C0114B5A9AB3F /* Transmittable.swift */; };
+		8769DB154B86F2194A2DBE58 /* Pods-Swocket_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C06AF014043F5E52F46CC90 /* Pods-Swocket_Tests-dummy.m */; };
+		9C6C7A2737EB6E478C1EE060 /* Swocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FEBDDE0487B9DA9CDBD1748 /* Swocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A863AFC8B5A93BF2515BFC60 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59D7B0DA82B6D6B1B0CE50E /* Socket.swift */; };
+		AB295EA72BDED2849FAC916F /* Transmittable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883843ED270C0114B5A9AB3F /* Transmittable.swift */; };
+		B429DD8ED57E2DFAC0E08549 /* Transmittable+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7B560CB17907282DAFAC8D /* Transmittable+Async.swift */; };
+		B4578E6E099643DF14DA055A /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59D7B0DA82B6D6B1B0CE50E /* Socket.swift */; };
+		BC7D3EFD9C249814E37C5DE7 /* Asyncable+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C174169BA669A7B05A1AD /* Asyncable+Helpers.swift */; };
+		C3F46C9AE1E00187D45317A3 /* Pods-Swocket_Tests-Swocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62ECF2879A83511632116AED /* Pods-Swocket_Tests-Swocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FDAC469816D574CA9A85C0 /* Connectable+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390C177E0D25328D9DBA643 /* Connectable+Async.swift */; };
+		C91671189A52DF9364321C60 /* Listenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DBDC9193577E3B8CC625C /* Listenable.swift */; };
+		CEE934FB35427139114571EA /* Pods-Swocket_Tests-Swocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A5A64A6D7F6ADB6178582 /* Pods-Swocket_Tests-Swocket-dummy.m */; };
+		DA351FABA56C65B8A1C86105 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4564CFCE33254AE2EC4431 /* Foundation.framework */; };
+		DC7E042B19969112018CF885 /* Pods-Swocket_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 075804EA7E14DCD81977366B /* Pods-Swocket_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFA6A9F4769A138AC3724118 /* Swocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53851D613D198A090ACD2E05 /* Swocket.swift */; };
+		E3F87E5D4ED86026943CB180 /* UDPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CC27DA47A2C08A4B542462 /* UDPSocket.swift */; };
+		EBAF6EC02D92FB4DA902F629 /* Pods-Swocket_Example-Swocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4064A17DBCE7C6029509ED46 /* Pods-Swocket_Example-Swocket-dummy.m */; };
+		F80E65D5A650EE6084E04657 /* Pods-Swocket_Example-Swocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CE427932079963009C53F2D /* Pods-Swocket_Example-Swocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4206D513197D50D4CCD8BD75 /* PBXContainerItemProxy */ = {
+		0B676D8EC6E88DBD584D9C6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 271492B2510B4D1D242E2EEB /* Project object */;
+			containerPortal = B06E0385787883686643DE1D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3C7C434509C8C8D1FBA34464;
-			remoteInfo = "Pods-Swocket_Example-Swocket";
-		};
-		C278DBD6F7C74BE6DB8C99D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 271492B2510B4D1D242E2EEB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 626F5D4DE03D2897EC6E5EFD;
+			remoteGlobalIDString = 93E9C2328815099B9D2B3C7A;
 			remoteInfo = "Pods-Swocket_Tests-Swocket";
+		};
+		67B024C013C3D53519ECFFBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B06E0385787883686643DE1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72A25B6A840C2C0DFDDE9039;
+			remoteInfo = "Pods-Swocket_Example-Swocket";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00DC0D6B54D41A91EDB85EBC /* Pods-Swocket_Example-Swocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swocket_Example-Swocket-prefix.pch"; sourceTree = "<group>"; };
-		019F337CBADC18BCA4B7733E /* Swocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Swocket.h; sourceTree = "<group>"; };
-		048DEFBDA886DFFA8FC747B7 /* Pods-Swocket_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swocket_Tests-dummy.m"; sourceTree = "<group>"; };
-		0A68A0A5E1D274C980F03693 /* Pods-Swocket_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swocket_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0E54B166E582F84AA6AF1A65 /* Connectable+Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Connectable+Async.swift"; sourceTree = "<group>"; };
-		0EBE7D98FBDE718FC6F03434 /* Pods-Swocket_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Swocket_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		138368492BEF1E3DA926224A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14F0622C73AC04D223FB4E39 /* TCPSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TCPSocket.swift; sourceTree = "<group>"; };
-		174006F1E562D0272646820B /* Transmittable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Transmittable.swift; sourceTree = "<group>"; };
-		17D0931046B0C50A5A539BD4 /* Asyncable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Asyncable.swift; sourceTree = "<group>"; };
-		1A4FBD25F6264C2B28181322 /* Pods-Swocket_Tests-Swocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Swocket_Tests-Swocket-umbrella.h"; path = "../Pods-Swocket_Tests-Swocket/Pods-Swocket_Tests-Swocket-umbrella.h"; sourceTree = "<group>"; };
-		1ADE130C02D3B9B3C4EBEBF4 /* Swocket.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = Swocket.c; sourceTree = "<group>"; };
-		1D793219F6438650F6001C69 /* Pods-Swocket_Example-Swocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swocket_Example-Swocket.xcconfig"; sourceTree = "<group>"; };
-		1E139DE74F5E2FAE677F4B6F /* Pods-Swocket_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swocket_Example-frameworks.sh"; sourceTree = "<group>"; };
-		2A078AFAF8469A4D798A7F64 /* Pods-Swocket_Tests-Swocket-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swocket_Tests-Swocket-Private.xcconfig"; path = "../Pods-Swocket_Tests-Swocket/Pods-Swocket_Tests-Swocket-Private.xcconfig"; sourceTree = "<group>"; };
-		37F6E381E5F32C37DF936DD9 /* Pods-Swocket_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swocket_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		38671383058B64248C09A5AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-Swocket_Tests-Swocket/Info.plist"; sourceTree = "<group>"; };
-		4003233C609466E892A6940F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		424D533F3175F53783C98DE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AAB5115C65080CB3616D203 /* Pods-Swocket_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swocket_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4C38A536E807EC37DB80C138 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
-		4CF77952CE25E945EAB9C45F /* Swocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DA8462E4B50898F65D09017 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4ED5E4EFDF6F73F354392654 /* Pods-Swocket_Tests-Swocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-Swocket_Tests-Swocket.modulemap"; path = "../Pods-Swocket_Tests-Swocket/Pods-Swocket_Tests-Swocket.modulemap"; sourceTree = "<group>"; };
-		5D4D82F7C808FC0BBC3F8456 /* Pods-Swocket_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swocket_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		64ADF70629810418EEE61EFB /* Pods-Swocket_Example-Swocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swocket_Example-Swocket-dummy.m"; sourceTree = "<group>"; };
-		64C7B9E4B5BB7C514348B847 /* Pods-Swocket_Example-Swocket-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swocket_Example-Swocket-Private.xcconfig"; sourceTree = "<group>"; };
-		704D4606D014002BB09DA981 /* Pods-Swocket_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swocket_Tests-resources.sh"; sourceTree = "<group>"; };
-		70DBA623378B275869CE2F68 /* Pods-Swocket_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swocket_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7314DE72D99FA6290AEE9C4E /* Pods-Swocket_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swocket_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		7C88897CB89152A44E0A34FD /* UDPSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UDPSocket.swift; sourceTree = "<group>"; };
-		7C8C73B7E6D7DB2CD2CF241F /* Pods-Swocket_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swocket_Tests-environment.h"; sourceTree = "<group>"; };
-		7D5998DABEBB6F7D44AD73F8 /* Transmittable+Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Transmittable+Async.swift"; sourceTree = "<group>"; };
-		80E6DEDFB2491E2C8D46BF2D /* Pods_Swocket_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swocket_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DB8486E1411F97FB9309E0C /* Pods-Swocket_Example-Swocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swocket_Example-Swocket-umbrella.h"; sourceTree = "<group>"; };
-		9C1EE173BADC3F50FF65E38F /* Pods-Swocket_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swocket_Tests-umbrella.h"; sourceTree = "<group>"; };
-		A0441B5F91D0373818054373 /* Swocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Swocket.swift; sourceTree = "<group>"; };
-		A0DCCA5ECDE38CD4992461C8 /* Pods-Swocket_Tests-Swocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swocket_Tests-Swocket.xcconfig"; path = "../Pods-Swocket_Tests-Swocket/Pods-Swocket_Tests-Swocket.xcconfig"; sourceTree = "<group>"; };
-		A5A3626D022445D97F75ECD4 /* Pods-Swocket_Tests-Swocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Swocket_Tests-Swocket-prefix.pch"; path = "../Pods-Swocket_Tests-Swocket/Pods-Swocket_Tests-Swocket-prefix.pch"; sourceTree = "<group>"; };
-		B3D78EB0D829ACC7AF6896E9 /* Pods-Swocket_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swocket_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B53419AC57D0AC5327D4C418 /* Pods-Swocket_Tests-Swocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Swocket_Tests-Swocket-dummy.m"; path = "../Pods-Swocket_Tests-Swocket/Pods-Swocket_Tests-Swocket-dummy.m"; sourceTree = "<group>"; };
-		B57EC260DE96C32EDD8A3359 /* Pods-Swocket_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Swocket_Example.modulemap"; sourceTree = "<group>"; };
-		B8964AE6DBD99F6EEB8374BB /* Pods-Swocket_Example-Swocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Swocket_Example-Swocket.modulemap"; sourceTree = "<group>"; };
-		CEEBE45065030AB236E9A9A8 /* Pods-Swocket_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Swocket_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D31760AE12F40A787402D6F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D61FC8B50CA17E8627A615A2 /* Pods-Swocket_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swocket_Example-environment.h"; sourceTree = "<group>"; };
-		DEE9F6BA2CCA982C403D1157 /* Pods-Swocket_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swocket_Example-resources.sh"; sourceTree = "<group>"; };
-		E51EADBF6166444F58A12366 /* Pods-Swocket_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swocket_Example-dummy.m"; sourceTree = "<group>"; };
-		E59837BEF6E4EC1AA21EEBCF /* Swocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB896B5A5DC65439D352141C /* Connectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Connectable.swift; sourceTree = "<group>"; };
-		F12CAE35958543DE05CF38CC /* Pods_Swocket_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swocket_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5EC840147F0D1A90F88E7B4 /* Pods-Swocket_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swocket_Example-umbrella.h"; sourceTree = "<group>"; };
-		F95C26B6EE24982925BD90E4 /* Listenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Listenable.swift; sourceTree = "<group>"; };
-		F9E29E27292778D7CA8BCDA7 /* Pods-Swocket_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Swocket_Tests.modulemap"; sourceTree = "<group>"; };
-		FFA8F37511885804FCFABB22 /* Asyncable+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Asyncable+Helpers.swift"; sourceTree = "<group>"; };
+		00F3C59E2F3504F1176DBB62 /* Pods-Swocket_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swocket_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		02AA02F9FA768C26181AB273 /* Pods-Swocket_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swocket_Tests-environment.h"; sourceTree = "<group>"; };
+		075804EA7E14DCD81977366B /* Pods-Swocket_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swocket_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0BB785A907AE5F7E4E1C10C0 /* Connectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Connectable.swift; sourceTree = "<group>"; };
+		0FEBDDE0487B9DA9CDBD1748 /* Swocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Swocket.h; sourceTree = "<group>"; };
+		112BB5AAF28A698F14910F78 /* Pods-Swocket_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swocket_Example.release.xcconfig"; sourceTree = "<group>"; };
+		119E295287578751EF2E19DC /* Pods-Swocket_Tests-Swocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Swocket_Tests-Swocket-prefix.pch"; path = "../Pods-Swocket_Tests-Swocket/Pods-Swocket_Tests-Swocket-prefix.pch"; sourceTree = "<group>"; };
+		187A5A64A6D7F6ADB6178582 /* Pods-Swocket_Tests-Swocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Swocket_Tests-Swocket-dummy.m"; path = "../Pods-Swocket_Tests-Swocket/Pods-Swocket_Tests-Swocket-dummy.m"; sourceTree = "<group>"; };
+		1B2C174169BA669A7B05A1AD /* Asyncable+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Asyncable+Helpers.swift"; sourceTree = "<group>"; };
+		1DDA32F377B32FB46997EEBD /* Swocket.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = Swocket.c; sourceTree = "<group>"; };
+		24E3D8E73208D535AE7CE5AE /* Pods-Swocket_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swocket_Example-environment.h"; sourceTree = "<group>"; };
+		258A1CD199F87D18B217FB15 /* Pods-Swocket_Example-Swocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swocket_Example-Swocket.xcconfig"; sourceTree = "<group>"; };
+		3979FA2C9CDD9CC2F4199704 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A81B34318B66F4C779C8A58 /* Pods-Swocket_Tests-Swocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-Swocket_Tests-Swocket.modulemap"; path = "../Pods-Swocket_Tests-Swocket/Pods-Swocket_Tests-Swocket.modulemap"; sourceTree = "<group>"; };
+		3CE427932079963009C53F2D /* Pods-Swocket_Example-Swocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swocket_Example-Swocket-umbrella.h"; sourceTree = "<group>"; };
+		3E4564CFCE33254AE2EC4431 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4064A17DBCE7C6029509ED46 /* Pods-Swocket_Example-Swocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swocket_Example-Swocket-dummy.m"; sourceTree = "<group>"; };
+		446329A8E2F16A68CB6742ED /* Pods-Swocket_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swocket_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		491951B6CDCF16B57A1560E2 /* Pods-Swocket_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swocket_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		49F4128512957D5B7994E592 /* Pods-Swocket_Example-Swocket-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swocket_Example-Swocket-Private.xcconfig"; sourceTree = "<group>"; };
+		51C485C6971BBDB70B026F2F /* Pods-Swocket_Tests-Swocket-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swocket_Tests-Swocket-Private.xcconfig"; path = "../Pods-Swocket_Tests-Swocket/Pods-Swocket_Tests-Swocket-Private.xcconfig"; sourceTree = "<group>"; };
+		521756B1E91E44AE9EBC0179 /* Pods_Swocket_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swocket_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53851D613D198A090ACD2E05 /* Swocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Swocket.swift; sourceTree = "<group>"; };
+		5BFE2FC9B084C177CA66EDAC /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		60EFE13D9914D2FD5EC60F4A /* Pods-Swocket_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Swocket_Example.modulemap"; sourceTree = "<group>"; };
+		62ECF2879A83511632116AED /* Pods-Swocket_Tests-Swocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Swocket_Tests-Swocket-umbrella.h"; path = "../Pods-Swocket_Tests-Swocket/Pods-Swocket_Tests-Swocket-umbrella.h"; sourceTree = "<group>"; };
+		637DBDC9193577E3B8CC625C /* Listenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Listenable.swift; sourceTree = "<group>"; };
+		6C06AF014043F5E52F46CC90 /* Pods-Swocket_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swocket_Tests-dummy.m"; sourceTree = "<group>"; };
+		71658415259E3512D6DC0E05 /* TCPSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TCPSocket.swift; sourceTree = "<group>"; };
+		77C3C01A656FA10E4241B20F /* Pods-Swocket_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swocket_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7A98A4923B64C9726C003DCB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82CDB532CB702096EEB70661 /* Swocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86157C164832B1056B0EB634 /* Pods_Swocket_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swocket_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		883843ED270C0114B5A9AB3F /* Transmittable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Transmittable.swift; sourceTree = "<group>"; };
+		8A0E07EAB9C89F0344B4AD4F /* Asyncable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Asyncable.swift; sourceTree = "<group>"; };
+		90FB31274DFAE70B70F5D84F /* Pods-Swocket_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swocket_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		954BD50B97804E8EF09E757A /* Pods-Swocket_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swocket_Example-umbrella.h"; sourceTree = "<group>"; };
+		9E57389B1DB59FA0D2FF83BD /* Pods-Swocket_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swocket_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A390C177E0D25328D9DBA643 /* Connectable+Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Connectable+Async.swift"; sourceTree = "<group>"; };
+		A7C23F256AC42AAAF2BF9CC2 /* Pods-Swocket_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swocket_Tests-resources.sh"; sourceTree = "<group>"; };
+		A8A1CDCF7E391517AD22028A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF3C5145AE95065DCA97BC2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-Swocket_Tests-Swocket/Info.plist"; sourceTree = "<group>"; };
+		AE204B0747FD4DD15F03C1C1 /* Pods-Swocket_Example-Swocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Swocket_Example-Swocket.modulemap"; sourceTree = "<group>"; };
+		AE71D38439AA88A1C39FF605 /* Pods-Swocket_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Swocket_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AFD9C4A4AFAE7B0BF6D23089 /* Pods-Swocket_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swocket_Example-dummy.m"; sourceTree = "<group>"; };
+		C185D119BBF2CB7146E53CC5 /* Pods-Swocket_Tests-Swocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swocket_Tests-Swocket.xcconfig"; path = "../Pods-Swocket_Tests-Swocket/Pods-Swocket_Tests-Swocket.xcconfig"; sourceTree = "<group>"; };
+		CA7B560CB17907282DAFAC8D /* Transmittable+Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Transmittable+Async.swift"; sourceTree = "<group>"; };
+		CF1F6CB790A6781EA4991486 /* Swocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D59D7B0DA82B6D6B1B0CE50E /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		DEEFB820CA97C45A6ECDE7C9 /* Pods-Swocket_Example-Swocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swocket_Example-Swocket-prefix.pch"; sourceTree = "<group>"; };
+		DF5C63F85CDA0151730F9BE8 /* Pods-Swocket_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swocket_Example-resources.sh"; sourceTree = "<group>"; };
+		DF800854D2314DB919A43B54 /* Pods-Swocket_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Swocket_Tests.modulemap"; sourceTree = "<group>"; };
+		F128822316EE18A3F814B2AE /* Pods-Swocket_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swocket_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F3CC27DA47A2C08A4B542462 /* UDPSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UDPSocket.swift; sourceTree = "<group>"; };
+		FFD500ACCD4E6569411F900C /* Pods-Swocket_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Swocket_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		380CB0861F48524ADA0D66AD /* Frameworks */ = {
+		05624680C5BAE9F20EC5248E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24EBD9D0386878972D4D7723 /* Foundation.framework in Frameworks */,
+				482D64F0E14E69801ABBCC20 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		500A0FD1BEBC2837746F5C97 /* Frameworks */ = {
+		17E8BD5B5E1C1E191FDAA0DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FD395E078ED89E14B1839B2 /* Foundation.framework in Frameworks */,
+				537A9DF0AA8075A0EC427ED8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D0372B037BBD3BCCA3D15AC /* Frameworks */ = {
+		50DB87ED32D9D54C578A7F0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D8EDE92CF74205AC15BC6E2 /* Foundation.framework in Frameworks */,
+				DA351FABA56C65B8A1C86105 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB5CE1C6B773C1D0BE5C5077 /* Frameworks */ = {
+		9F30F083A5AC7AA5EBCF2F0C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C79FA6FE7841C8A024268EF1 /* Foundation.framework in Frameworks */,
+				68FE0039498269A28DCED659 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		144C0A80613EB83C4E50C738 /* Frameworks */ = {
+		142EEEA450F18D6E55F44A69 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D40D4F7996D782F335FEC1C7 /* iOS */,
+				3E4564CFCE33254AE2EC4431 /* Foundation.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		446631F1EE0C1C8FAB5A8D08 /* Protocols */ = {
+		24B0C2F069D88F547CF24F22 = {
 			isa = PBXGroup;
 			children = (
-				17D0931046B0C50A5A539BD4 /* Asyncable.swift */,
-				EB896B5A5DC65439D352141C /* Connectable.swift */,
-				F95C26B6EE24982925BD90E4 /* Listenable.swift */,
-				174006F1E562D0272646820B /* Transmittable.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		575C948D76FC6459AE804AE2 = {
-			isa = PBXGroup;
-			children = (
-				4DA8462E4B50898F65D09017 /* Podfile */,
-				C8E1CC0553DA4B8FC9C07E32 /* Development Pods */,
-				144C0A80613EB83C4E50C738 /* Frameworks */,
-				E275763FF9BFA086DB07ECDD /* Products */,
-				6E76BD65AF98366FC97AF4B8 /* Targets Support Files */,
+				5BFE2FC9B084C177CA66EDAC /* Podfile */,
+				FC1BCC57ED6E1D8A14EB47FF /* Development Pods */,
+				E1A0CE7C35ECE4B10C84ABE8 /* Frameworks */,
+				3A8455332C2884C32CCF6D17 /* Products */,
+				8A64564DBA75CBB25D951766 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		6E76BD65AF98366FC97AF4B8 /* Targets Support Files */ = {
+		3A8455332C2884C32CCF6D17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83EDB26286BDE02166AEF522 /* Pods-Swocket_Example */,
-				C529B018F482B9FB8C6A4690 /* Pods-Swocket_Tests */,
+				86157C164832B1056B0EB634 /* Pods_Swocket_Example.framework */,
+				521756B1E91E44AE9EBC0179 /* Pods_Swocket_Tests.framework */,
+				82CDB532CB702096EEB70661 /* Swocket.framework */,
+				CF1F6CB790A6781EA4991486 /* Swocket.framework */,
 			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		7D5D987F6EBB2F9AD2C177EF /* Swocket */ = {
+		4696A7DF697F0AD7CB01A430 /* Swocket */ = {
 			isa = PBXGroup;
 			children = (
-				D036E17ED441E63B3CFDBBBB /* Pod */,
-				DCECB0C5736A7B82B5AF5FE2 /* Support Files */,
+				6F5C2D404CD9AF1D3DC986E2 /* Pod */,
+				EFD975FA73F37E1C452C292E /* Support Files */,
 			);
 			name = Swocket;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		83EDB26286BDE02166AEF522 /* Pods-Swocket_Example */ = {
+		4EB0C4A57522FD9D91EF17B8 /* Pods-Swocket_Example */ = {
 			isa = PBXGroup;
 			children = (
-				424D533F3175F53783C98DE6 /* Info.plist */,
-				B57EC260DE96C32EDD8A3359 /* Pods-Swocket_Example.modulemap */,
-				0EBE7D98FBDE718FC6F03434 /* Pods-Swocket_Example-acknowledgements.markdown */,
-				5D4D82F7C808FC0BBC3F8456 /* Pods-Swocket_Example-acknowledgements.plist */,
-				E51EADBF6166444F58A12366 /* Pods-Swocket_Example-dummy.m */,
-				D61FC8B50CA17E8627A615A2 /* Pods-Swocket_Example-environment.h */,
-				1E139DE74F5E2FAE677F4B6F /* Pods-Swocket_Example-frameworks.sh */,
-				DEE9F6BA2CCA982C403D1157 /* Pods-Swocket_Example-resources.sh */,
-				F5EC840147F0D1A90F88E7B4 /* Pods-Swocket_Example-umbrella.h */,
-				37F6E381E5F32C37DF936DD9 /* Pods-Swocket_Example.debug.xcconfig */,
-				4AAB5115C65080CB3616D203 /* Pods-Swocket_Example.release.xcconfig */,
+				A8A1CDCF7E391517AD22028A /* Info.plist */,
+				60EFE13D9914D2FD5EC60F4A /* Pods-Swocket_Example.modulemap */,
+				FFD500ACCD4E6569411F900C /* Pods-Swocket_Example-acknowledgements.markdown */,
+				9E57389B1DB59FA0D2FF83BD /* Pods-Swocket_Example-acknowledgements.plist */,
+				AFD9C4A4AFAE7B0BF6D23089 /* Pods-Swocket_Example-dummy.m */,
+				24E3D8E73208D535AE7CE5AE /* Pods-Swocket_Example-environment.h */,
+				77C3C01A656FA10E4241B20F /* Pods-Swocket_Example-frameworks.sh */,
+				DF5C63F85CDA0151730F9BE8 /* Pods-Swocket_Example-resources.sh */,
+				954BD50B97804E8EF09E757A /* Pods-Swocket_Example-umbrella.h */,
+				90FB31274DFAE70B70F5D84F /* Pods-Swocket_Example.debug.xcconfig */,
+				112BB5AAF28A698F14910F78 /* Pods-Swocket_Example.release.xcconfig */,
 			);
 			name = "Pods-Swocket_Example";
 			path = "Target Support Files/Pods-Swocket_Example";
 			sourceTree = "<group>";
 		};
-		B4012CB177A0BAD53A0ABB5E /* Extensions */ = {
+		6F5C2D404CD9AF1D3DC986E2 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				FFA8F37511885804FCFABB22 /* Asyncable+Helpers.swift */,
-				0E54B166E582F84AA6AF1A65 /* Connectable+Async.swift */,
-				7D5998DABEBB6F7D44AD73F8 /* Transmittable+Async.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		C529B018F482B9FB8C6A4690 /* Pods-Swocket_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				138368492BEF1E3DA926224A /* Info.plist */,
-				F9E29E27292778D7CA8BCDA7 /* Pods-Swocket_Tests.modulemap */,
-				CEEBE45065030AB236E9A9A8 /* Pods-Swocket_Tests-acknowledgements.markdown */,
-				B3D78EB0D829ACC7AF6896E9 /* Pods-Swocket_Tests-acknowledgements.plist */,
-				048DEFBDA886DFFA8FC747B7 /* Pods-Swocket_Tests-dummy.m */,
-				7C8C73B7E6D7DB2CD2CF241F /* Pods-Swocket_Tests-environment.h */,
-				7314DE72D99FA6290AEE9C4E /* Pods-Swocket_Tests-frameworks.sh */,
-				704D4606D014002BB09DA981 /* Pods-Swocket_Tests-resources.sh */,
-				9C1EE173BADC3F50FF65E38F /* Pods-Swocket_Tests-umbrella.h */,
-				70DBA623378B275869CE2F68 /* Pods-Swocket_Tests.debug.xcconfig */,
-				0A68A0A5E1D274C980F03693 /* Pods-Swocket_Tests.release.xcconfig */,
-			);
-			name = "Pods-Swocket_Tests";
-			path = "Target Support Files/Pods-Swocket_Tests";
-			sourceTree = "<group>";
-		};
-		C8E1CC0553DA4B8FC9C07E32 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7D5D987F6EBB2F9AD2C177EF /* Swocket */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		D036E17ED441E63B3CFDBBBB /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				D888BE5B2CFD85902A3DB479 /* Classes */,
-				B4012CB177A0BAD53A0ABB5E /* Extensions */,
-				446631F1EE0C1C8FAB5A8D08 /* Protocols */,
+				8ADBB9B8205145075EE27D17 /* Classes */,
+				A5E4E998B36493830709DF07 /* Extensions */,
+				AC456CD079B0ECE4FF99F1E3 /* Protocols */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		D40D4F7996D782F335FEC1C7 /* iOS */ = {
+		8A64564DBA75CBB25D951766 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4003233C609466E892A6940F /* Foundation.framework */,
+				4EB0C4A57522FD9D91EF17B8 /* Pods-Swocket_Example */,
+				F4BE08A5F57580F6A1CB9AD9 /* Pods-Swocket_Tests */,
 			);
-			name = iOS;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D888BE5B2CFD85902A3DB479 /* Classes */ = {
+		8ADBB9B8205145075EE27D17 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4C38A536E807EC37DB80C138 /* Socket.swift */,
-				1ADE130C02D3B9B3C4EBEBF4 /* Swocket.c */,
-				019F337CBADC18BCA4B7733E /* Swocket.h */,
-				A0441B5F91D0373818054373 /* Swocket.swift */,
-				14F0622C73AC04D223FB4E39 /* TCPSocket.swift */,
-				7C88897CB89152A44E0A34FD /* UDPSocket.swift */,
+				D59D7B0DA82B6D6B1B0CE50E /* Socket.swift */,
+				1DDA32F377B32FB46997EEBD /* Swocket.c */,
+				0FEBDDE0487B9DA9CDBD1748 /* Swocket.h */,
+				53851D613D198A090ACD2E05 /* Swocket.swift */,
+				71658415259E3512D6DC0E05 /* TCPSocket.swift */,
+				F3CC27DA47A2C08A4B542462 /* UDPSocket.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		DCECB0C5736A7B82B5AF5FE2 /* Support Files */ = {
+		A5E4E998B36493830709DF07 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D31760AE12F40A787402D6F8 /* Info.plist */,
-				38671383058B64248C09A5AE /* Info.plist */,
-				B8964AE6DBD99F6EEB8374BB /* Pods-Swocket_Example-Swocket.modulemap */,
-				1D793219F6438650F6001C69 /* Pods-Swocket_Example-Swocket.xcconfig */,
-				64C7B9E4B5BB7C514348B847 /* Pods-Swocket_Example-Swocket-Private.xcconfig */,
-				64ADF70629810418EEE61EFB /* Pods-Swocket_Example-Swocket-dummy.m */,
-				00DC0D6B54D41A91EDB85EBC /* Pods-Swocket_Example-Swocket-prefix.pch */,
-				8DB8486E1411F97FB9309E0C /* Pods-Swocket_Example-Swocket-umbrella.h */,
-				4ED5E4EFDF6F73F354392654 /* Pods-Swocket_Tests-Swocket.modulemap */,
-				A0DCCA5ECDE38CD4992461C8 /* Pods-Swocket_Tests-Swocket.xcconfig */,
-				2A078AFAF8469A4D798A7F64 /* Pods-Swocket_Tests-Swocket-Private.xcconfig */,
-				B53419AC57D0AC5327D4C418 /* Pods-Swocket_Tests-Swocket-dummy.m */,
-				A5A3626D022445D97F75ECD4 /* Pods-Swocket_Tests-Swocket-prefix.pch */,
-				1A4FBD25F6264C2B28181322 /* Pods-Swocket_Tests-Swocket-umbrella.h */,
+				1B2C174169BA669A7B05A1AD /* Asyncable+Helpers.swift */,
+				A390C177E0D25328D9DBA643 /* Connectable+Async.swift */,
+				CA7B560CB17907282DAFAC8D /* Transmittable+Async.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC456CD079B0ECE4FF99F1E3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8A0E07EAB9C89F0344B4AD4F /* Asyncable.swift */,
+				0BB785A907AE5F7E4E1C10C0 /* Connectable.swift */,
+				637DBDC9193577E3B8CC625C /* Listenable.swift */,
+				883843ED270C0114B5A9AB3F /* Transmittable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E1A0CE7C35ECE4B10C84ABE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				142EEEA450F18D6E55F44A69 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFD975FA73F37E1C452C292E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3979FA2C9CDD9CC2F4199704 /* Info.plist */,
+				ACF3C5145AE95065DCA97BC2 /* Info.plist */,
+				AE204B0747FD4DD15F03C1C1 /* Pods-Swocket_Example-Swocket.modulemap */,
+				258A1CD199F87D18B217FB15 /* Pods-Swocket_Example-Swocket.xcconfig */,
+				49F4128512957D5B7994E592 /* Pods-Swocket_Example-Swocket-Private.xcconfig */,
+				4064A17DBCE7C6029509ED46 /* Pods-Swocket_Example-Swocket-dummy.m */,
+				DEEFB820CA97C45A6ECDE7C9 /* Pods-Swocket_Example-Swocket-prefix.pch */,
+				3CE427932079963009C53F2D /* Pods-Swocket_Example-Swocket-umbrella.h */,
+				3A81B34318B66F4C779C8A58 /* Pods-Swocket_Tests-Swocket.modulemap */,
+				C185D119BBF2CB7146E53CC5 /* Pods-Swocket_Tests-Swocket.xcconfig */,
+				51C485C6971BBDB70B026F2F /* Pods-Swocket_Tests-Swocket-Private.xcconfig */,
+				187A5A64A6D7F6ADB6178582 /* Pods-Swocket_Tests-Swocket-dummy.m */,
+				119E295287578751EF2E19DC /* Pods-Swocket_Tests-Swocket-prefix.pch */,
+				62ECF2879A83511632116AED /* Pods-Swocket_Tests-Swocket-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Pods-Swocket_Example-Swocket";
 			sourceTree = "<group>";
 		};
-		E275763FF9BFA086DB07ECDD /* Products */ = {
+		F4BE08A5F57580F6A1CB9AD9 /* Pods-Swocket_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				80E6DEDFB2491E2C8D46BF2D /* Pods_Swocket_Example.framework */,
-				F12CAE35958543DE05CF38CC /* Pods_Swocket_Tests.framework */,
-				4CF77952CE25E945EAB9C45F /* Swocket.framework */,
-				E59837BEF6E4EC1AA21EEBCF /* Swocket.framework */,
+				7A98A4923B64C9726C003DCB /* Info.plist */,
+				DF800854D2314DB919A43B54 /* Pods-Swocket_Tests.modulemap */,
+				AE71D38439AA88A1C39FF605 /* Pods-Swocket_Tests-acknowledgements.markdown */,
+				F128822316EE18A3F814B2AE /* Pods-Swocket_Tests-acknowledgements.plist */,
+				6C06AF014043F5E52F46CC90 /* Pods-Swocket_Tests-dummy.m */,
+				02AA02F9FA768C26181AB273 /* Pods-Swocket_Tests-environment.h */,
+				446329A8E2F16A68CB6742ED /* Pods-Swocket_Tests-frameworks.sh */,
+				A7C23F256AC42AAAF2BF9CC2 /* Pods-Swocket_Tests-resources.sh */,
+				075804EA7E14DCD81977366B /* Pods-Swocket_Tests-umbrella.h */,
+				00F3C59E2F3504F1176DBB62 /* Pods-Swocket_Tests.debug.xcconfig */,
+				491951B6CDCF16B57A1560E2 /* Pods-Swocket_Tests.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-Swocket_Tests";
+			path = "Target Support Files/Pods-Swocket_Tests";
+			sourceTree = "<group>";
+		};
+		FC1BCC57ED6E1D8A14EB47FF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4696A7DF697F0AD7CB01A430 /* Swocket */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		040ECE160113A5A91168037B /* Headers */ = {
+		91E87314DD19ED1BAC062EFD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DF22F2C1B328341307C44B8 /* Pods-Swocket_Tests-umbrella.h in Headers */,
+				16F22C1400A89E32934C81C6 /* Pods-Swocket_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		820248F7508F12977D97B85A /* Headers */ = {
+		ACC925196E9217AC7DDEC4CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C83BAD9D88BDA917159E7C8E /* Pods-Swocket_Example-Swocket-umbrella.h in Headers */,
-				20E5A3B459DF0048E9F392C6 /* Swocket.h in Headers */,
+				C3F46C9AE1E00187D45317A3 /* Pods-Swocket_Tests-Swocket-umbrella.h in Headers */,
+				0DA0A703CF5BA4174096BF7E /* Swocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		858B003652D62EEFF0D43561 /* Headers */ = {
+		B69849F1B44A74E81BC79FEB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6888326B6C40AC9D9F431997 /* Pods-Swocket_Example-umbrella.h in Headers */,
+				F80E65D5A650EE6084E04657 /* Pods-Swocket_Example-Swocket-umbrella.h in Headers */,
+				9C6C7A2737EB6E478C1EE060 /* Swocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E66D7AD5ABF2FC49F2EAD6C4 /* Headers */ = {
+		F4400B06D0EA42D59E887823 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F0067128AF625574204C54 /* Pods-Swocket_Tests-Swocket-umbrella.h in Headers */,
-				BAF787FA04DE4D5221BD0AB8 /* Swocket.h in Headers */,
+				DC7E042B19969112018CF885 /* Pods-Swocket_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		08F1AB0828D707BDDAE927EE /* Pods-Swocket_Tests */ = {
+		4BF9F2CABA2C9BC96538BB83 /* Pods-Swocket_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B78C12551CDF2E77DD45C234 /* Build configuration list for PBXNativeTarget "Pods-Swocket_Tests" */;
+			buildConfigurationList = 085617778DF174929F58EAF1 /* Build configuration list for PBXNativeTarget "Pods-Swocket_Example" */;
 			buildPhases = (
-				A99459672F22CDAB4509DF87 /* Sources */,
-				CB5CE1C6B773C1D0BE5C5077 /* Frameworks */,
-				040ECE160113A5A91168037B /* Headers */,
+				3DA03DAC2EF6C0701068E89A /* Sources */,
+				05624680C5BAE9F20EC5248E /* Frameworks */,
+				91E87314DD19ED1BAC062EFD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F03D247E1E5BAF485D66FBC0 /* PBXTargetDependency */,
+				FC5D5DBC270E4CA2154D946E /* PBXTargetDependency */,
 			);
-			name = "Pods-Swocket_Tests";
-			productName = "Pods-Swocket_Tests";
-			productReference = F12CAE35958543DE05CF38CC /* Pods_Swocket_Tests.framework */;
+			name = "Pods-Swocket_Example";
+			productName = "Pods-Swocket_Example";
+			productReference = 86157C164832B1056B0EB634 /* Pods_Swocket_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3C7C434509C8C8D1FBA34464 /* Pods-Swocket_Example-Swocket */ = {
+		72A25B6A840C2C0DFDDE9039 /* Pods-Swocket_Example-Swocket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C7D909431971F965865DB64 /* Build configuration list for PBXNativeTarget "Pods-Swocket_Example-Swocket" */;
+			buildConfigurationList = 404D85DF68F307B924D5C0CC /* Build configuration list for PBXNativeTarget "Pods-Swocket_Example-Swocket" */;
 			buildPhases = (
-				734EB161D05D0B11FC66200E /* Sources */,
-				6D0372B037BBD3BCCA3D15AC /* Frameworks */,
-				820248F7508F12977D97B85A /* Headers */,
+				A3A408475D9A83B25867C849 /* Sources */,
+				9F30F083A5AC7AA5EBCF2F0C /* Frameworks */,
+				B69849F1B44A74E81BC79FEB /* Headers */,
 			);
 			buildRules = (
 			);
@@ -399,16 +399,34 @@
 			);
 			name = "Pods-Swocket_Example-Swocket";
 			productName = "Pods-Swocket_Example-Swocket";
-			productReference = E59837BEF6E4EC1AA21EEBCF /* Swocket.framework */;
+			productReference = CF1F6CB790A6781EA4991486 /* Swocket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		626F5D4DE03D2897EC6E5EFD /* Pods-Swocket_Tests-Swocket */ = {
+		8974901230D5DB88E8716F7B /* Pods-Swocket_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1505021982F7B6205822A19 /* Build configuration list for PBXNativeTarget "Pods-Swocket_Tests-Swocket" */;
+			buildConfigurationList = A9645C281F68ACD96AF59D69 /* Build configuration list for PBXNativeTarget "Pods-Swocket_Tests" */;
 			buildPhases = (
-				4EB600852B863F251AC7A74D /* Sources */,
-				500A0FD1BEBC2837746F5C97 /* Frameworks */,
-				E66D7AD5ABF2FC49F2EAD6C4 /* Headers */,
+				A97FAC6F10A4FB24193AD3DC /* Sources */,
+				17E8BD5B5E1C1E191FDAA0DD /* Frameworks */,
+				F4400B06D0EA42D59E887823 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E78396E5D3AF1C250415B599 /* PBXTargetDependency */,
+			);
+			name = "Pods-Swocket_Tests";
+			productName = "Pods-Swocket_Tests";
+			productReference = 521756B1E91E44AE9EBC0179 /* Pods_Swocket_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93E9C2328815099B9D2B3C7A /* Pods-Swocket_Tests-Swocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E65E036478A281088D559F3 /* Build configuration list for PBXNativeTarget "Pods-Swocket_Tests-Swocket" */;
+			buildPhases = (
+				6BA49A47392F5CAB95ED8E4E /* Sources */,
+				50DB87ED32D9D54C578A7F0A /* Frameworks */,
+				ACC925196E9217AC7DDEC4CE /* Headers */,
 			);
 			buildRules = (
 			);
@@ -416,133 +434,149 @@
 			);
 			name = "Pods-Swocket_Tests-Swocket";
 			productName = "Pods-Swocket_Tests-Swocket";
-			productReference = 4CF77952CE25E945EAB9C45F /* Swocket.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6DAB92E3ABF9DADAF2A94A3F /* Pods-Swocket_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6147AC816669B11A2321E08C /* Build configuration list for PBXNativeTarget "Pods-Swocket_Example" */;
-			buildPhases = (
-				85AFF2A46F4461A038926FAB /* Sources */,
-				380CB0861F48524ADA0D66AD /* Frameworks */,
-				858B003652D62EEFF0D43561 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BA0CC07A699CADF75828A465 /* PBXTargetDependency */,
-			);
-			name = "Pods-Swocket_Example";
-			productName = "Pods-Swocket_Example";
-			productReference = 80E6DEDFB2491E2C8D46BF2D /* Pods_Swocket_Example.framework */;
+			productReference = 82CDB532CB702096EEB70661 /* Swocket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		271492B2510B4D1D242E2EEB /* Project object */ = {
+		B06E0385787883686643DE1D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 0CBEBF0EC384493DBA30E418 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = F750C0761D7EA799DC64337D /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 575C948D76FC6459AE804AE2;
-			productRefGroup = E275763FF9BFA086DB07ECDD /* Products */;
+			mainGroup = 24B0C2F069D88F547CF24F22;
+			productRefGroup = 3A8455332C2884C32CCF6D17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6DAB92E3ABF9DADAF2A94A3F /* Pods-Swocket_Example */,
-				3C7C434509C8C8D1FBA34464 /* Pods-Swocket_Example-Swocket */,
-				08F1AB0828D707BDDAE927EE /* Pods-Swocket_Tests */,
-				626F5D4DE03D2897EC6E5EFD /* Pods-Swocket_Tests-Swocket */,
+				4BF9F2CABA2C9BC96538BB83 /* Pods-Swocket_Example */,
+				72A25B6A840C2C0DFDDE9039 /* Pods-Swocket_Example-Swocket */,
+				8974901230D5DB88E8716F7B /* Pods-Swocket_Tests */,
+				93E9C2328815099B9D2B3C7A /* Pods-Swocket_Tests-Swocket */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4EB600852B863F251AC7A74D /* Sources */ = {
+		3DA03DAC2EF6C0701068E89A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86A62FEF9282AA7FE32C9D4F /* Asyncable+Helpers.swift in Sources */,
-				04EB7E78133F2B77EDA9B6C7 /* Asyncable.swift in Sources */,
-				26F02E150773323117205EB0 /* Connectable+Async.swift in Sources */,
-				5C409B5A853141E253396CAD /* Connectable.swift in Sources */,
-				9D410AA6909E93BA4877FD72 /* Listenable.swift in Sources */,
-				E782A9B6BE664C8D0CCF2FBF /* Pods-Swocket_Tests-Swocket-dummy.m in Sources */,
-				61AD046F4CBAC28EDAD850A4 /* Socket.swift in Sources */,
-				8C5D026E8598B2F44BC6F41A /* Swocket.c in Sources */,
-				EE482D013206A2F323A393B6 /* Swocket.swift in Sources */,
-				A47B44A35BF2F04CEEC432ED /* TCPSocket.swift in Sources */,
-				03E6CB7DA22E133FA0E9FDC1 /* Transmittable+Async.swift in Sources */,
-				1271B07F3186219A9455ADAA /* Transmittable.swift in Sources */,
-				ECC57E3A69B6522B3F2B03DD /* UDPSocket.swift in Sources */,
+				487EA4704DCDFC4CEF4D0D12 /* Pods-Swocket_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		734EB161D05D0B11FC66200E /* Sources */ = {
+		6BA49A47392F5CAB95ED8E4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEC6F2A551802FD455BC0C71 /* Asyncable+Helpers.swift in Sources */,
-				8E48AB75B6302BD1CE3DF869 /* Asyncable.swift in Sources */,
-				E04058E39BB63DCC53B7D07A /* Connectable+Async.swift in Sources */,
-				857BAC2005EF41B5B48ABBB2 /* Connectable.swift in Sources */,
-				AA7FE39471F4CAB6C6B48443 /* Listenable.swift in Sources */,
-				DFB03715E64368D21D52C9E8 /* Pods-Swocket_Example-Swocket-dummy.m in Sources */,
-				92B3B6BC9948A4F008222056 /* Socket.swift in Sources */,
-				6ACA8E2268B0942B2CC7C7FF /* Swocket.c in Sources */,
-				47D15253D524840007291C67 /* Swocket.swift in Sources */,
-				C0156A76709B80A30BCCE691 /* TCPSocket.swift in Sources */,
-				FE75E4C7D3BC795852242F81 /* Transmittable+Async.swift in Sources */,
-				1E2D4D53F845FAAD90690AA2 /* Transmittable.swift in Sources */,
-				B086611826919B395DAE7683 /* UDPSocket.swift in Sources */,
+				BC7D3EFD9C249814E37C5DE7 /* Asyncable+Helpers.swift in Sources */,
+				065DF1DD4E9DC2453E681577 /* Asyncable.swift in Sources */,
+				C8FDAC469816D574CA9A85C0 /* Connectable+Async.swift in Sources */,
+				54C01FC18A69F83144826557 /* Connectable.swift in Sources */,
+				C91671189A52DF9364321C60 /* Listenable.swift in Sources */,
+				CEE934FB35427139114571EA /* Pods-Swocket_Tests-Swocket-dummy.m in Sources */,
+				A863AFC8B5A93BF2515BFC60 /* Socket.swift in Sources */,
+				6136E8A7BD4A5CBD5AC4E617 /* Swocket.c in Sources */,
+				5900B0E96FC067D2D7413535 /* Swocket.swift in Sources */,
+				0F8214BC29B61738F4AAB5B4 /* TCPSocket.swift in Sources */,
+				B429DD8ED57E2DFAC0E08549 /* Transmittable+Async.swift in Sources */,
+				AB295EA72BDED2849FAC916F /* Transmittable.swift in Sources */,
+				4F53C63B768E3D7A1EC5071C /* UDPSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85AFF2A46F4461A038926FAB /* Sources */ = {
+		A3A408475D9A83B25867C849 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7568050D3A1B4B6E2E4CBDA2 /* Pods-Swocket_Example-dummy.m in Sources */,
+				74B049225C33F9C56602FA0B /* Asyncable+Helpers.swift in Sources */,
+				430FD608A3FF0BA7636987EA /* Asyncable.swift in Sources */,
+				23AF8F70E1C03736C7FF6DE3 /* Connectable+Async.swift in Sources */,
+				0D2EB3E60E0BED75C787E847 /* Connectable.swift in Sources */,
+				42CB648E7EEF1C72DFA6C63F /* Listenable.swift in Sources */,
+				EBAF6EC02D92FB4DA902F629 /* Pods-Swocket_Example-Swocket-dummy.m in Sources */,
+				B4578E6E099643DF14DA055A /* Socket.swift in Sources */,
+				7205BF2A419E0F4E18353FD8 /* Swocket.c in Sources */,
+				DFA6A9F4769A138AC3724118 /* Swocket.swift in Sources */,
+				400809E962E91E92E8DC8C2B /* TCPSocket.swift in Sources */,
+				76B54945F55795586EFF0830 /* Transmittable+Async.swift in Sources */,
+				7E0E17710A1A06CAA4D9A952 /* Transmittable.swift in Sources */,
+				E3F87E5D4ED86026943CB180 /* UDPSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A99459672F22CDAB4509DF87 /* Sources */ = {
+		A97FAC6F10A4FB24193AD3DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF8A2C783B75BB4A6A16C6EC /* Pods-Swocket_Tests-dummy.m in Sources */,
+				8769DB154B86F2194A2DBE58 /* Pods-Swocket_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BA0CC07A699CADF75828A465 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Swocket_Example-Swocket";
-			target = 3C7C434509C8C8D1FBA34464 /* Pods-Swocket_Example-Swocket */;
-			targetProxy = 4206D513197D50D4CCD8BD75 /* PBXContainerItemProxy */;
-		};
-		F03D247E1E5BAF485D66FBC0 /* PBXTargetDependency */ = {
+		E78396E5D3AF1C250415B599 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Swocket_Tests-Swocket";
-			target = 626F5D4DE03D2897EC6E5EFD /* Pods-Swocket_Tests-Swocket */;
-			targetProxy = C278DBD6F7C74BE6DB8C99D3 /* PBXContainerItemProxy */;
+			target = 93E9C2328815099B9D2B3C7A /* Pods-Swocket_Tests-Swocket */;
+			targetProxy = 0B676D8EC6E88DBD584D9C6F /* PBXContainerItemProxy */;
+		};
+		FC5D5DBC270E4CA2154D946E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Swocket_Example-Swocket";
+			target = 72A25B6A840C2C0DFDDE9039 /* Pods-Swocket_Example-Swocket */;
+			targetProxy = 67B024C013C3D53519ECFFBF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0416B07A8574E0CDFFA29B12 /* Debug */ = {
+		0958A33F7A62E8B7E0F0613D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37F6E381E5F32C37DF936DD9 /* Pods-Swocket_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E8FBBE23EE7D953DE567360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49F4128512957D5B7994E592 /* Pods-Swocket_Example-Swocket-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -551,58 +585,25 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Swocket_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Swocket_Example-Swocket/Pods-Swocket_Example-Swocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Swocket_Example-Swocket/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Swocket_Example/Pods-Swocket_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Swocket_Example;
+				MODULEMAP_FILE = "Target Support Files/Pods-Swocket_Example-Swocket/Pods-Swocket_Example-Swocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Swocket;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		08820EB7688225DAEFD57FDB /* Debug */ = {
+		210437D50FEC131CA0A919FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70DBA623378B275869CE2F68 /* Pods-Swocket_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Swocket_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Swocket_Tests/Pods-Swocket_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Swocket_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		35033DACD60240364C3E2E11 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A078AFAF8469A4D798A7F64 /* Pods-Swocket_Tests-Swocket-Private.xcconfig */;
+			baseConfigurationReference = 51C485C6971BBDB70B026F2F /* Pods-Swocket_Tests-Swocket-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -627,65 +628,7 @@
 			};
 			name = Release;
 		};
-		50B7ACC8EDC3E792AE8E6540 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AAB5115C65080CB3616D203 /* Pods-Swocket_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Swocket_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Swocket_Example/Pods-Swocket_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Swocket_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6CB4F4D85307CB0A51564021 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A68A0A5E1D274C980F03693 /* Pods-Swocket_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Swocket_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Swocket_Tests/Pods-Swocket_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Swocket_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8ED370AAAA188AB0A2931EEE /* Debug */ = {
+		4B327C1178E11AD150CECE26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -724,36 +667,9 @@
 			};
 			name = Debug;
 		};
-		93A7E3B4FC5BCA6D6FC134F4 /* Release */ = {
+		5A57E17B6052750B3C773E2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64C7B9E4B5BB7C514348B847 /* Pods-Swocket_Example-Swocket-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Swocket_Example-Swocket/Pods-Swocket_Example-Swocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Swocket_Example-Swocket/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Swocket_Example-Swocket/Pods-Swocket_Example-Swocket.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Swocket;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CB0ACC38F5909B294D49CF46 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64C7B9E4B5BB7C514348B847 /* Pods-Swocket_Example-Swocket-Private.xcconfig */;
+			baseConfigurationReference = 49F4128512957D5B7994E592 /* Pods-Swocket_Example-Swocket-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -779,43 +695,38 @@
 			};
 			name = Debug;
 		};
-		E7A9700DED36260599C5C0FE /* Release */ = {
+		5C38F714F1B6B116F4D0EE2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 491951B6CDCF16B57A1560E2 /* Pods-Swocket_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Swocket_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Swocket_Tests/Pods-Swocket_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Swocket_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		F755F97A027F9FBD97269AA9 /* Debug */ = {
+		8B9E30C49F368E1F268983A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A078AFAF8469A4D798A7F64 /* Pods-Swocket_Tests-Swocket-Private.xcconfig */;
+			baseConfigurationReference = 51C485C6971BBDB70B026F2F /* Pods-Swocket_Tests-Swocket-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -841,55 +752,144 @@
 			};
 			name = Debug;
 		};
+		C5CAE33336D17C0F5202D987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 112BB5AAF28A698F14910F78 /* Pods-Swocket_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Swocket_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Swocket_Example/Pods-Swocket_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Swocket_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E171B6C84CA9CB83DAD63484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90FB31274DFAE70B70F5D84F /* Pods-Swocket_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Swocket_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Swocket_Example/Pods-Swocket_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Swocket_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E330A16F07B7042A7A365193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00F3C59E2F3504F1176DBB62 /* Pods-Swocket_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Swocket_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Swocket_Tests/Pods-Swocket_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Swocket_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0CBEBF0EC384493DBA30E418 /* Build configuration list for PBXProject "Pods" */ = {
+		085617778DF174929F58EAF1 /* Build configuration list for PBXNativeTarget "Pods-Swocket_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8ED370AAAA188AB0A2931EEE /* Debug */,
-				E7A9700DED36260599C5C0FE /* Release */,
+				E171B6C84CA9CB83DAD63484 /* Debug */,
+				C5CAE33336D17C0F5202D987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C7D909431971F965865DB64 /* Build configuration list for PBXNativeTarget "Pods-Swocket_Example-Swocket" */ = {
+		404D85DF68F307B924D5C0CC /* Build configuration list for PBXNativeTarget "Pods-Swocket_Example-Swocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB0ACC38F5909B294D49CF46 /* Debug */,
-				93A7E3B4FC5BCA6D6FC134F4 /* Release */,
+				5A57E17B6052750B3C773E2F /* Debug */,
+				0E8FBBE23EE7D953DE567360 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6147AC816669B11A2321E08C /* Build configuration list for PBXNativeTarget "Pods-Swocket_Example" */ = {
+		5E65E036478A281088D559F3 /* Build configuration list for PBXNativeTarget "Pods-Swocket_Tests-Swocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0416B07A8574E0CDFFA29B12 /* Debug */,
-				50B7ACC8EDC3E792AE8E6540 /* Release */,
+				8B9E30C49F368E1F268983A4 /* Debug */,
+				210437D50FEC131CA0A919FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B78C12551CDF2E77DD45C234 /* Build configuration list for PBXNativeTarget "Pods-Swocket_Tests" */ = {
+		A9645C281F68ACD96AF59D69 /* Build configuration list for PBXNativeTarget "Pods-Swocket_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				08820EB7688225DAEFD57FDB /* Debug */,
-				6CB4F4D85307CB0A51564021 /* Release */,
+				E330A16F07B7042A7A365193 /* Debug */,
+				5C38F714F1B6B116F4D0EE2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1505021982F7B6205822A19 /* Build configuration list for PBXNativeTarget "Pods-Swocket_Tests-Swocket" */ = {
+		F750C0761D7EA799DC64337D /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F755F97A027F9FBD97269AA9 /* Debug */,
-				35033DACD60240364C3E2E11 /* Release */,
+				4B327C1178E11AD150CECE26 /* Debug */,
+				0958A33F7A62E8B7E0F0613D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 271492B2510B4D1D242E2EEB /* Project object */;
+	rootObject = B06E0385787883686643DE1D /* Project object */;
 }
