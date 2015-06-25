@@ -20,8 +20,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import Foundation
-
-public class Swocket {
-    public static let TCP = TCPSocket.self
+public protocol Transmittable {
+    /**
+    Send data
+    - Parameter data: The data to send
+    */
+    func sendData(data: NSData) throws
+    
+    /**
+    Recieve data
+    - Return: data recieved
+    */
+    func recieveData() throws -> NSData
 }

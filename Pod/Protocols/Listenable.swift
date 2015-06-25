@@ -20,8 +20,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import Foundation
+public typealias SwocketNewConnectionClosure = (Transmittable) -> Void
 
-public class Swocket {
-    public static let TCP = TCPSocket.self
+public protocol Listenable {
+    /**
+    Listens for incomming connections
+    - Parameter port: The port to listen for connections on
+    - Parameter connectionClosure: Closure that will be called on every new connection
+    */
+    static func listen(port: UInt, onConnection connectionClosure: SwocketNewConnectionClosure) throws -> Listenable
+    
+    /**
+    Stop listen for incomming connections
+    */
+    func stop() throws
 }

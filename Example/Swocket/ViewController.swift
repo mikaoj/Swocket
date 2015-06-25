@@ -12,39 +12,40 @@ import Swocket
 class ViewController: UIViewController {
     @IBOutlet weak var responseLabel: UILabel!
     @IBOutlet weak var messageField: UITextField!
+    var server: Listenable?
     
     // Set up a socket to localhost on port 9999
-    let client = Swocket(host: "127.0.0.1", port: 9999)
+    let client = Swocket.TCP.init(host: "127.0.0.1", port: 9999)
     
     @IBAction func send(sender: UIButton) {
         // Get text to send and convert to NSData
         if let data = messageField.text?.dataUsingEncoding(NSUTF8StringEncoding) {
             // Connect to server
-            client.connect()
-            
+            try! client.connect()
+
             // Send message
-            client.send(data)
+            try! client.sendData(data)
             
             // Get response
-            client.recieve({ (socket, data) -> () in
+            client.recieveDataAsync({ (data, error) -> Void in
                 // Unwrap response as string and set response label
-                if let response = String(CString: UnsafePointer<CChar>(data.bytes), encoding: NSUTF8StringEncoding) {
-                    self.responseLabel.text = response
-                }
+                let response = NSString(data: data!, encoding: NSUTF8StringEncoding) as? String
+                self.responseLabel.text = response
+                print(response)
+                try! self.client.disconnect()
             })
-            
-            // Disconnect
-            client.disconnect()
         }
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        let data = "Wazzzup\n".dataUsingEncoding(NSUTF8StringEncoding)!
+        let httpString = "HTTP/1.1 200 OK\nContent-Type: text/html; charset=UTF-8"
+        let htmlString = "<html><head><title>Rosanna</title></head><body><h1>Hej Rosanna</h1><p>Det här serverades av min nätverkskod till browsern du kollar på det här i</p></body></html>"
+        let data = "\(httpString)\n\n\(htmlString)".dataUsingEncoding(NSUTF8StringEncoding)!
         
-        Swocket.listen(1337, onConnection: { (client) -> () in
-            client.send(data)
+        server = try! Swocket.TCP.listen(8080, onConnection: { (client) -> () in
+            try! client.recieveData()
+            try! client.sendData(data)
         })
     }
 }
-

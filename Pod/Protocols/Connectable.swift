@@ -20,8 +20,26 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import Foundation
-
-public class Swocket {
-    public static let TCP = TCPSocket.self
+public protocol Connectable {
+    /**
+    Connected or not?
+    */
+    var connected: Bool { get }
+    
+    /**
+    Initializes a new connectable with a given host and port
+    - Parameter host: The host to connect to
+    - Parameter port: The port to connect to
+    */
+    init(host: String, port: UInt)
+    
+    /**
+    Connects to the host. Will throw on errors, including already connected.
+    */
+    func connect() throws
+    
+    /**
+    Disconnects from the host. Will throw errors, e.g if not connected
+    */
+    func disconnect() throws
 }
