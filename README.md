@@ -1,67 +1,71 @@
 ![Logo](Swocket.png)
 
-[![CI Status](http://img.shields.io/travis/mikoaj/Swocket.svg?style=flat)](https://travis-ci.org/mikaoj/Swocket)
-[![Version](https://img.shields.io/cocoapods/v/Swocket.svg?style=flat)](http://cocoapods.org/pods/Swocket)
-[![License](https://img.shields.io/cocoapods/l/Swocket.svg?style=flat)](http://cocoapods.org/pods/Swocket)
-[![Platform](https://img.shields.io/cocoapods/p/Swocket.svg?style=flat)](http://cocoapods.org/pods/Swocket)
-## Note
-This is not ready for production yet. But I'm hoping to have it ready for the world in a couple of weeks.
-
+[![CI Status](http://img.shields.io/travis/mikoaj/Swocket.svg?style=flat-square)](https://travis-ci.org/mikaoj/Swocket)
+[![Version](https://img.shields.io/cocoapods/v/Swocket.svg?style=flat-square)](http://cocoapods.org/pods/Swocket)
+[![License](https://img.shields.io/cocoapods/l/Swocket.svg?style=flat-square)](http://cocoapods.org/pods/Swocket)
+[![Platform](https://img.shields.io/cocoapods/p/Swocket.svg?style=flat-square)](http://cocoapods.org/pods/Swocket)
 ## TODO
 * UDP
-* Tests
-* Inline C helper methods
-* Benchmark
-* Cleanup
-* Cocoapods
 
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-##### Client:
+##### Echo Client:
 ```swift
 let data = "Wazzzup".dataUsingEncoding(NSUTF8StringEncoding)!
 
+// Set up a socket to localhost on port 9999
+let client = Swocket.TCP.init(host: "127.0.0.1", port: 9999)
+
 // Connect to server
-client.connect()
+client.connectAsync()
 
 // Send message
-client.send(data)
+client.sendDataAsync(data)
 
 // Get response
-client.recieve({ (socket, data) -> () in
-    // Unwrap response as string and print it
-    if let response = String(CString: UnsafePointer<CChar>(data.bytes), encoding: NSUTF8StringEncoding) {
-        print(response)
-    }
+client.recieveDataAsync({ (data, error) -> Void in
+    // Unwrap response as string and set response label
+    let response = NSString(data: data!, encoding: NSUTF8StringEncoding) as? String
+    print(response)
 })
 
 // Disconnect
-client.disconnect()
+client.disconnectAsync()
 ```
-##### Server:
+##### HTTP Server:
 ```swift
-let data = "Hello world!\n".dataUsingEncoding(NSUTF8StringEncoding)!
+let httpString = "HTTP/1.1 200 OK\nContent-Type: text/html; charset=UTF-8"
+let htmlString = "<html><head><title>Hello</title></head><body><h1>Hello World!</h1><p>I am a tiny little web server</p></body></html>"
+let data = "\(httpString)\n\n\(htmlString)".dataUsingEncoding(NSUTF8StringEncoding)!
 
-Swocket.listen(1337, onConnection: { (client) -> () in
-    client.send(data)
+server = try! Swocket.TCP.listen(8080, onConnection: { (client) -> () in
+    try! client.recieveData() // Ignore what client requests
+    try! client.sendData(data) // And give them the same result every time! :P
 })
 ```
+##### Want to things synchronously?
+No problem, all async functions have a synchronous counterpart.
 
 ##### Handle errors:
 ```swift
-// All functions have an optional error closure
-Swocket.listen(1337, onConnection: { (client) -> () in
-    client.send(data)
-}) { (error) -> () in
-    print(error)
+// All async functions have an optional error closure
+client.sendDataAsync(data, onError: { (error) -> Void in
+  print(error)
+})
+
+// And synchronous functions throws an error
+do {
+  try client.sendData(data)
+} catch {
+  print(error)
 }
 ```
 
 ## Requirements
 
-Xcode 7
+Xcode 7 (Swift 2)
 
 ## Installation
 

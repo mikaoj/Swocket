@@ -21,17 +21,17 @@ class ViewController: UIViewController {
         // Get text to send and convert to NSData
         if let data = messageField.text?.dataUsingEncoding(NSUTF8StringEncoding) {
             // Connect to server
-            try! client.connect()
+            client.connectAsync()
 
             // Send message
-            try! client.sendData(data)
+            client.sendDataAsync(data)
             
             // Get response
             client.recieveDataAsync({ (data, error) -> Void in
                 // Unwrap response as string and set response label
                 let response = NSString(data: data!, encoding: NSUTF8StringEncoding) as? String
                 self.responseLabel.text = response
-                try! self.client.disconnect()
+                self.client.disconnectAsync()
             })
         }
     }
