@@ -10,29 +10,15 @@
 Pod::Spec.new do |s|
   s.name             = "Swocket"
   s.version          = "0.1.0"
-  s.summary          = "A short description of Swocket."
-  s.description      = <<-DESC
-                       An optional longer description of Swocket
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
+  s.summary          = "Asynchronous network framework in Swift"
   s.homepage         = "https://github.com/<GITHUB_USERNAME>/Swocket"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Joakim Gyllstrom" => "joakim@backslashed.se" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/Swocket.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Joakim Gyllström" => "joakim@backslashed.se" }
+  s.source           = { :git => "https://github.com/mikaoj/Swocket.git", :tag => s.version.to_s }
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.9'
 
-  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/**/*'
-  #s.resource_bundles = {
-  #  'Swocket' => ['Pod/Assets/*.png']
-  #}
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
