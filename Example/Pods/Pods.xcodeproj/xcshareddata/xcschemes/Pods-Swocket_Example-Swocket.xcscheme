@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "72A25B6A840C2C0DFDDE9039"
+               BlueprintIdentifier = "0D94419E8B66344B9BC1606C"
                BuildableName = "Swocket.framework"
                BlueprintName = "Pods-Swocket_Example-Swocket"
                ReferencedContainer = "container:Pods.xcodeproj">
