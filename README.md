@@ -45,7 +45,7 @@ server = try! Swocket.TCP.listen(8080, onConnection: { (client) -> () in
     try! client.sendData(data) // And give them the same result every time! :P
 })
 ```
-##### Want to things synchronously?
+##### Want to do things synchronously?
 No problem, all async functions have a synchronous counterpart.
 
 ##### Handle errors:
