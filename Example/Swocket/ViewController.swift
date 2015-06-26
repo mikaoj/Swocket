@@ -43,8 +43,12 @@ class ViewController: UIViewController {
         let data = "\(httpString)\n\n\(htmlString)".dataUsingEncoding(NSUTF8StringEncoding)!
         
         server = try! Swocket.TCP.listen(8080, onConnection: { (client) -> () in
-            try! client.recieveData() // Ignore what client requests
-            try! client.sendData(data) // And give them the same result every time! :P
+            do {
+                try client.recieveData() // Ignore what client requests
+                try client.sendData(data) // And give them the same result every time! :P
+            } catch {
+                print(error)
+            }
         })
     }
     
