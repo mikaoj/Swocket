@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5550F5891B3D7BB800E7DD3B /* TestTCPErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5550F5881B3D7BB800E7DD3B /* TestTCPErrors.swift */; };
+		5550F58B1B3D7EA500E7DD3B /* TestTCPCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5550F58A1B3D7EA500E7DD3B /* TestTCPCommunication.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		3A4504AB6136D9CB47F3FECB /* Pods-Swocket_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swocket_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swocket_Tests/Pods-Swocket_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5550F5871B3D7BB800E7DD3B /* Swocket_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swocket_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		5550F5881B3D7BB800E7DD3B /* TestTCPErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTCPErrors.swift; sourceTree = "<group>"; };
+		5550F58A1B3D7EA500E7DD3B /* TestTCPCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTCPCommunication.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Swocket_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swocket_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 				5550F5881B3D7BB800E7DD3B /* TestTCPErrors.swift */,
 				5550F5871B3D7BB800E7DD3B /* Swocket_Tests-Bridging-Header.h */,
+				5550F58A1B3D7EA500E7DD3B /* TestTCPCommunication.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5550F58B1B3D7EA500E7DD3B /* TestTCPCommunication.swift in Sources */,
 				5550F5891B3D7BB800E7DD3B /* TestTCPErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

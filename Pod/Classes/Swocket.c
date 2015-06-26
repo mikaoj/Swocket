@@ -32,7 +32,6 @@ int swocket_connect(const char * port, const char * host) {
     hints.ai_family = AF_UNSPEC;
     hints.ai_socktype = SOCK_STREAM;
     if ((rv = getaddrinfo(host, port, &hints, &servinfo)) != 0) {
-        fprintf(stderr, "getaddrinfo: %s\n", gai_strerror(rv));
         return -1;
     }
     
@@ -40,19 +39,16 @@ int swocket_connect(const char * port, const char * host) {
     for(p = servinfo; p != NULL; p = p->ai_next) {
         if ((sockfd = socket(p->ai_family, p->ai_socktype,
                              p->ai_protocol)) == -1) {
-            perror("client: socket");
             continue; }
         if (connect(sockfd, p->ai_addr, p->ai_addrlen) == -1) {
             close(sockfd);
-            perror("client: connect");
             continue; }
         break; }
     if (p == NULL) {
-        fprintf(stderr, "client: failed to connect\n");
         return -1;
     }
     inet_ntop(p->ai_family, get_in_addr((struct sockaddr *)p->ai_addr), s, sizeof s);
-    printf("Connected to %s with socket descriptor: %d\n", s, sockfd);
+    
     freeaddrinfo(servinfo); // all done with this structure
     
     // Set socket to ignore SIGPIPE
@@ -74,7 +70,6 @@ int swocket_listen(const char * port, int backlog) {
     hints.ai_socktype = SOCK_STREAM;
     hints.ai_flags = AI_PASSIVE; // use my IP
     if ((rv = getaddrinfo(NULL, port, &hints, &servinfo)) != 0) {
-        fprintf(stderr, "getaddrinfo: %s\n", gai_strerror(rv));
         return -1;
     }
     
@@ -82,7 +77,6 @@ int swocket_listen(const char * port, int backlog) {
     for(p = servinfo; p != NULL; p = p->ai_next) {
         if ((sockfd = socket(p->ai_family, p->ai_socktype,
                              p->ai_protocol)) == -1) {
-            perror("server: socket");
             continue;
         }
         if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &yes,
@@ -98,7 +92,6 @@ int swocket_listen(const char * port, int backlog) {
         break;
     }
     if (p == NULL)  {
-        fprintf(stderr, "server: failed to bind\n");
         return -1;
     }
     freeaddrinfo(servinfo); // all done with this structure
