@@ -1,19 +1,19 @@
 {
   "name": "Swocket",
   "version": "0.1.0",
-  "summary": "A short description of Swocket.",
-  "description": "                       An optional longer description of Swocket\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "summary": "Asynchronous network framework in Swift",
   "homepage": "https://github.com/<GITHUB_USERNAME>/Swocket",
   "license": "MIT",
   "authors": {
-    "Joakim Gyllstrom": "joakim@backslashed.se"
+    "Joakim Gyllström": "joakim@backslashed.se"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/Swocket.git",
+    "git": "https://github.com/mikaoj/Swocket.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "8.0",
+    "osx": "10.9"
   },
   "requires_arc": true,
   "source_files": "Pod/**/*"

@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Swocket: c07f901a07b760f29d01904d7a96bd24271f3f62
+  Swocket: b558e678d92be0da0b887b3c9a192c464daafa93
 
 COCOAPODS: 0.37.2
