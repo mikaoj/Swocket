@@ -133,3 +133,94 @@ int swocket_accept(int sockfd) {
     
     return new_fd;
 }
+
+int swocket_listen_udp(const char * port) {
+    int sockfd;
+    struct addrinfo hints, *servinfo, *p;
+    int rv;
+
+    memset(&hints, 0, sizeof hints);
+    hints.ai_family = AF_UNSPEC; // set to AF_INET to force IPv4
+    hints.ai_socktype = SOCK_DGRAM;
+    hints.ai_flags = AI_PASSIVE; // use my IP
+    
+    if ((rv = getaddrinfo(NULL, port, &hints, &servinfo)) != 0) {
+        return -1;
+    }
+    // loop through all the results and bind to the first we can
+    for(p = servinfo; p != NULL; p = p->ai_next) {
+        if ((sockfd = socket(p->ai_family, p->ai_socktype,
+                             p->ai_protocol)) == -1) {
+            perror("listener: socket");
+            continue; }
+        if (bind(sockfd, p->ai_addr, p->ai_addrlen) == -1) {
+            close(sockfd);
+            perror("listener: bind");
+            continue; }
+        break; }
+    if (p == NULL) {
+        return -1;
+    }
+    
+    freeaddrinfo(servinfo);
+    
+    return sockfd;
+}
+
+int swocket_connect_udp(const char * host, const char * port) {
+    int sockfd;
+    struct addrinfo hints, *servinfo, *p;
+    int rv;
+
+    memset(&hints, 0, sizeof hints);
+    hints.ai_family = AF_UNSPEC;
+    hints.ai_socktype = SOCK_DGRAM;
+    if ((rv = getaddrinfo(host, port, &hints, &servinfo)) != 0) {
+        return -1;
+    }
+    // loop through all the results and make a socket
+    for(p = servinfo; p != NULL; p = p->ai_next) {
+        if ((sockfd = socket(p->ai_family, p->ai_socktype,
+                             p->ai_protocol)) == -1) {
+            perror("talker: socket");
+            continue;
+        }
+        break;
+    }
+    
+    if (p == NULL) {
+        return -1;
+    }
+    
+    freeaddrinfo(servinfo);
+    
+    return sockfd;
+}
+
+//ssize_t swocket_recieve_udp(int sockfd) {
+//    int MAXBUFLEN = 100;
+//    
+//    ssize_t numbytes;
+//    struct sockaddr_storage their_addr;
+//    char buf[MAXBUFLEN];
+//    socklen_t addr_len;
+//    
+//    addr_len = sizeof their_addr;
+//    if ((numbytes = recvfrom(sockfd, buf, MAXBUFLEN-1 , 0,
+//                             (struct sockaddr *)&their_addr, &addr_len)) == -1) {
+//        return -1;
+//    }
+//
+//    return numbytes;
+//}
+//
+//ssize_t swocket_send_udp(int sockfd) {
+//    int numbytes;
+//    
+//    if ((numbytes = sendto(sockfd, argv[2], strlen(argv[2]), 0,
+//                           p->ai_addr, p->ai_addrlen)) == -1) {
+//        return -1;
+//    }
+//    
+//    return 0;
+//}

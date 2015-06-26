@@ -22,5 +22,45 @@
 
 import Foundation
 
-public class UDPSocket {
+public class UDPSocket : Asyncable, Transmittable, Connectable {
+    // MARK: Private data
+    private let commonSocket: Socket
+    
+    // MARK: Async vars
+    public final var dispatchQueue: dispatch_queue_t {
+        get {
+            return commonSocket.dispatchQueue
+        }
+    }
+    
+    public final var callbackQueue: dispatch_queue_t {
+        get {
+            return commonSocket.callbackQueue
+        }
+    }
+    
+    // MARK: Connectable vars
+    public final let connected = true
+    
+    // MARK: Init
+    public required init(host: String, port: UInt) {
+        commonSocket = Socket(host: host,
+            port: port,
+            callback: dispatch_get_main_queue(),
+            dispatch: dispatch_queue_create("TCP:\(host):\(port)", nil)
+        )
+    }
+    
+    // MARK: Connectable functions
+    public final func connect() throws { }
+    public final func disconnect() throws { }
+    
+    // MARK: Transmittable
+    public final func sendData(data: NSData) throws {
+        
+    }
+
+    public final func recieveData() throws -> NSData {
+        return NSData()
+    }
 }

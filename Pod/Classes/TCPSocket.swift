@@ -26,17 +26,16 @@ public final class TCPSocket : Listenable, Transmittable, Connectable, Asyncable
     // MARK: Private data
     private var connectionDescriptor: Int32?
     private let commonSocket: Socket
-    private let maxRecieveSize = 100
     private let maxPendingConnections: Int32 = 10
     
     // MARK: Async vars
-    public var dispatchQueue: dispatch_queue_t {
+    public final var dispatchQueue: dispatch_queue_t {
         get {
             return commonSocket.dispatchQueue
         }
     }
     
-    public var callbackQueue: dispatch_queue_t {
+    public final var callbackQueue: dispatch_queue_t {
         get {
             return commonSocket.callbackQueue
         }
@@ -102,10 +101,10 @@ public final class TCPSocket : Listenable, Transmittable, Connectable, Asyncable
         }
         
         var zero: Int8 = 0
-        let data = NSMutableData(bytes: &zero, length: maxRecieveSize)
+        let data = NSMutableData(bytes: &zero, length: commonSocket.maxRecieveSize)
         let dataPointer = UnsafeMutablePointer<Void>(data.mutableBytes)
         
-        let numberOfBytes = recv(descriptor, dataPointer, maxRecieveSize-1, 0)
+        let numberOfBytes = recv(descriptor, dataPointer, commonSocket.maxRecieveSize-1, 0)
         
         // 0 bytes == connection closed
         if numberOfBytes == 0 {
