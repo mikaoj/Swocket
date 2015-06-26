@@ -31,7 +31,6 @@ class ViewController: UIViewController {
                 // Unwrap response as string and set response label
                 let response = NSString(data: data!, encoding: NSUTF8StringEncoding) as? String
                 self.responseLabel.text = response
-                print(response)
                 try! self.client.disconnect()
             })
         }
@@ -40,12 +39,18 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         let httpString = "HTTP/1.1 200 OK\nContent-Type: text/html; charset=UTF-8"
-        let htmlString = "<html><head><title>Rosanna</title></head><body><h1>Hej Rosanna</h1><p>Det här serverades av min nätverkskod till browsern du kollar på det här i</p></body></html>"
+        let htmlString = "<html><head><title>Hello</title></head><body><h1>Hello World!</h1><p>I am a tiny little web server</p></body></html>"
         let data = "\(httpString)\n\n\(htmlString)".dataUsingEncoding(NSUTF8StringEncoding)!
         
         server = try! Swocket.TCP.listen(8080, onConnection: { (client) -> () in
-            try! client.recieveData()
-            try! client.sendData(data)
+            try! client.recieveData() // Ignore what client requests
+            try! client.sendData(data) // And give them the same result every time! :P
         })
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        try! server?.stop()
+        
+        viewDidDisappear(animated)
     }
 }
