@@ -40,6 +40,7 @@ internal final class Socket : Asyncable {
     let host: [CChar]
     let callbackQueue: dispatch_queue_t
     let dispatchQueue: dispatch_queue_t
+    let maxRecieveSize = 100
     
     init(host aHost: String, port aPort: UInt, callback: dispatch_queue_t, dispatch: dispatch_queue_t) {
         // Forcefull unwrapp on purpose

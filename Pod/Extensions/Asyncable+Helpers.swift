@@ -24,8 +24,15 @@ extension Asyncable {
     /**
     Convenience method for dispatching closure on dispatchQueue
     */
-    public func async(closure: () -> Void) {
+    public func dispatch(closure: () -> Void) {
         dispatch_async(dispatchQueue, closure)
+    }
+    
+    /**
+    Convenience method for dispatching closure on callbackQueue
+    */
+    public func callback(closure: () -> Void) {
+        dispatch_async(callbackQueue, closure)
     }
     
     /**
@@ -36,7 +43,7 @@ extension Asyncable {
             return
         }
         
-        dispatch_async(callbackQueue) { () -> Void in
+        callback { () -> Void in
             closure(error)
         }
     }
@@ -49,7 +56,7 @@ extension Asyncable {
             return
         }
         
-        dispatch_async(callbackQueue) { () -> Void in
+        callback { () -> Void in
             closure(nil, error)
         }
     }

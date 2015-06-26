@@ -24,7 +24,7 @@ import Foundation
 
 extension Connectable where Self : Asyncable {
     public func connectAsync(onError errorClosure: SwocketErrorClosure? = nil) {
-        async { () -> Void in
+        dispatch { () -> Void in
             do {
                 try self.connect()
             } catch {
@@ -36,7 +36,7 @@ extension Connectable where Self : Asyncable {
     }
     
     public func disconnectAsync(onError errorClosure: SwocketErrorClosure? = nil) {
-        async { () -> Void in
+        dispatch { () -> Void in
             do {
                 try self.disconnect()
             } catch {

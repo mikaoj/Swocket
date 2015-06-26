@@ -24,7 +24,7 @@ import Foundation
 
 extension Transmittable where Self : Asyncable {
     public func sendDataAsync(data: NSData, onError errorClosure: SwocketErrorClosure? = nil) {
-        async { () -> Void in
+        dispatch { () -> Void in
             do {
                 try self.sendData(data)
             } catch {
@@ -36,12 +36,12 @@ extension Transmittable where Self : Asyncable {
     }
     
     public func recieveDataAsync(completion: SwocketDataClosure? = nil) {
-        async { () -> Void in
+        dispatch { () -> Void in
             do {
                 let data = try self.recieveData()
                 
                 if let completion = completion {
-                    dispatch_async(self.callbackQueue, { () -> Void in
+                    self.callback({ () -> Void in
                         completion(data, nil)
                     })
                 }
