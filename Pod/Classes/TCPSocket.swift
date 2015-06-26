@@ -143,7 +143,7 @@ public final class TCPSocket : Listenable, Transmittable, Connectable, Asyncable
                 }
                 
                 // Return incoming connection
-                dispatch_async(server.callbackQueue) { () -> Void in
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { () -> Void in
                     // Create a TCPSocket and send to connection closure
                     let client = TCPSocket(host: "", port: port)
                     client.connectionDescriptor = clientDescriptor
