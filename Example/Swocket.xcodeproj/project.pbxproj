@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5550F5891B3D7BB800E7DD3B /* TestTCPErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5550F5881B3D7BB800E7DD3B /* TestTCPErrors.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		72BDCF1E62FDD82C0C213AB7 /* Pods_Swocket_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F96065CB3712573CF77FC3E /* Pods_Swocket_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C2DC389CDC20684510A380F2 /* Pods_Swocket_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CC72F0F9D808D23594C188 /* Pods_Swocket_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -33,6 +33,8 @@
 		258179376CEA14E75DEC86C5 /* Pods-Swocket_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swocket_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swocket_Example/Pods-Swocket_Example.release.xcconfig"; sourceTree = "<group>"; };
 		292D15874B88934FD3A50830 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3A4504AB6136D9CB47F3FECB /* Pods-Swocket_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swocket_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swocket_Tests/Pods-Swocket_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5550F5871B3D7BB800E7DD3B /* Swocket_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swocket_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		5550F5881B3D7BB800E7DD3B /* TestTCPErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTCPErrors.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Swocket_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swocket_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +44,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Swocket_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swocket_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6D64768B6C5E00035D328CB9 /* Swocket.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Swocket.podspec; path = ../Swocket.podspec; sourceTree = "<group>"; };
 		92CC72F0F9D808D23594C188 /* Pods_Swocket_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swocket_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C53E5EDEC3894DD29B1330 /* Pods-Swocket_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swocket_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swocket_Tests/Pods-Swocket_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,8 +125,9 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				5550F5881B3D7BB800E7DD3B /* TestTCPErrors.swift */,
+				5550F5871B3D7BB800E7DD3B /* Swocket_Tests-Bridging-Header.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -368,7 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				5550F5891B3D7BB800E7DD3B /* TestTCPErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +517,7 @@
 			baseConfigurationReference = 3A4504AB6136D9CB47F3FECB /* Pods-Swocket_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -527,6 +530,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Swocket_Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swocket_Example.app/Swocket_Example";
 			};
 			name = Debug;
@@ -536,6 +541,7 @@
 			baseConfigurationReference = F5C53E5EDEC3894DD29B1330 /* Pods-Swocket_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -544,6 +550,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Swocket_Tests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swocket_Example.app/Swocket_Example";
 			};
 			name = Release;
