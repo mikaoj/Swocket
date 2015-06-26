@@ -148,9 +148,6 @@ public final class TCPSocket : Listenable, Transmittable, Connectable, Asyncable
                     let client = TCPSocket(host: "", port: port)
                     client.connectionDescriptor = clientDescriptor
                     connectionClosure(client)
-                    
-                    // Disconnect after closure has ben run. Ignore errors, user may have disconnected it already
-                    do { try client.disconnect() } catch { }
                 }
             }
         }
