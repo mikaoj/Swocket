@@ -76,6 +76,10 @@ it, simply add the following line to your Podfile:
 pod "Swocket", "~> 0.1.0"
 ```
 
+## Documentation
+
+Documentation is available at cocoadocs: [Swocket documenation](http://cocoadocs.org/docsets/Swocket)
+
 ## Author
 
 Joakim Gyllström, joakim@backslashed.se
