@@ -1,5 +1,5 @@
 framework module Swocket {
-  umbrella header "Pods-Swocket_Tests-Swocket-umbrella.h"
+  umbrella header "Swocket-umbrella.h"
 
   export *
   module * { export * }
