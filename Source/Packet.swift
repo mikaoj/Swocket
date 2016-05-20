@@ -24,35 +24,42 @@ import Foundation
 
 /// Packet struct
 public struct Packet {
-    private var data: NSMutableData
+    private var box: Box
 
     /// Initializes the Packet with given data
     public init(_ data: NSData = NSData()) {
-        self.data = NSMutableData(data: data)
+        box = Box(NSMutableData(data: data))
     }
 }
 
 extension Packet {
     /// The number of bytes in this Packet
-    public var length: Int { return data.length }
+    public var length: Int { return box.data.length }
 
     /// The bytes in this Packet
-    public var bytes: UnsafePointer<Void> { return data.bytes }
+    public var bytes: UnsafePointer<Void> { return box.data.bytes }
 }
 
 extension Packet {
     private var mutableData: NSMutableData {
         mutating get {
-            if !isUniquelyReferencedNonObjC(&data) {
-                data = mutableData.mutableCopy() as! NSMutableData
+            if !isUniquelyReferencedNonObjC(&box) {
+                box = Box(mutableData.mutableCopy() as! NSMutableData)
             }
 
-            return data
+            return box.data
         }
     }
 
     /// Append data to this Packet
     public mutating func append(other: NSData) {
         mutableData.appendData(other)
+    }
+}
+
+final class Box {
+    var data: NSMutableData
+    init(_ value: NSMutableData) {
+        data = value
     }
 }

@@ -16,8 +16,9 @@ class ViewController: UIViewController {
     @IBAction func send(sender: UIButton) {
         // Get text to send and convert to NSData
         if let data = messageField.text?.dataUsingEncoding(NSUTF8StringEncoding) {
+            let message = Packet(data)
             var response = Packet()
-            try! Socket.open("127.0.0.1", port: 8080).send(Packet(data)).receive(&response).close()
+            try! Socket.open("127.0.0.1", port: 8080).send(message).receive(&response).close()
 
             let woop = NSData(bytes: response.bytes, length: response.length)
             responseLabel.text = String(data: woop, encoding: NSUTF8StringEncoding)!

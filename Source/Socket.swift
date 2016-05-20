@@ -70,6 +70,7 @@ public protocol TransmissionControl {
     /**
      Receives a packet.
      - parameter Packet: The received packet.
+     - parameter BufferSize: The size of receiving buffer.
      - returns: The current socket.
      */
     func receive(inout packet: Packet, bufferSize: Int) throws -> Self
@@ -130,7 +131,7 @@ extension Socket: TransmissionControl {
 
         // Truncate buffer to the length of the received data
         buffer.length = receivedBytes
-        packet = Packet(buffer)
+        packet.append(buffer)
 
         return self
     }
